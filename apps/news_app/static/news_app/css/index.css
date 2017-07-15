@@ -1,0 +1,41 @@
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.my-nav {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  z-index: 999;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+}
+
+.my-carousel {
+  position: absolute;
+  top: 0;
+}
