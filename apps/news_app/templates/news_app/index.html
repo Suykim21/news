@@ -22,7 +22,6 @@
           <div class="row">
             <ul class="main-nav">
               <li><a href="#">Politics</a></li>
-              <li><a href="#">Business-Finance</a></li>
               <li><a href="#">Entertainment</a></li>
               <li><a href="#">Tech</a></li>
               <li><a href="#">Sports</a></li>
@@ -37,29 +36,24 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
           </ol>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="{% static 'news_app/img/politics.jpg' %}" alt="politics">
+              <img src="{{car_one}}" alt="politics">
             </div>
 
             <div class="item">
-              <img src="{% static 'news_app/img/finance.jpg' %}" alt="finance">
+              <img src="{{car_two}}" alt="entertainment">
             </div>
 
             <div class="item">
-              <img src="{% static 'news_app/img/tech.jpg' %}" alt="tech">
+              <img src="{{car_three}}" alt="tech">
             </div>
 
             <div class="item">
-              <img src="{% static 'news_app/img/sports.jpg' %}" alt="sports">
-            </div>
-
-            <div class="item">
-              <img src="{% static 'news_app/img/entertainment.jpg' %}" alt="entertainment">
+              <img src="{{car_four}}" alt="sports">
             </div>
           </div>
 
