@@ -73,31 +73,31 @@ a:active {
 
 .btn-full:link,
 .btn-full:visited {
-  background-color: rgb(75, 147, 177);
-  border: 1px solid rgb(75, 147, 177);
+  background-color: rgb(26, 175, 238);
+  border: 1px solid rgb(26, 175, 238);
   color: #fff;
   margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid rgb(75, 147, 177);
-  color: rgb(75, 147, 177);
+  border: 1px solid rgb(26, 175, 238);
+  color: rgb(26, 175, 238);
 }
 
 .btn:hover,
 .btn:active {
-  background-color: rgb(75, 147, 177);
+  background-color: rgb(26, 175, 238);
 }
 
 .btn-ghost:hover,
 .btn-full:active {
-  border: 1px solid rgb(75, 147, 177);
+  border: 1px solid rgb(26, 175, 238);
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid rgb(75, 147, 177);
+  border: 1px solid rgb(26, 175, 238);
   color: #fff;
 }
 
