@@ -81,8 +81,8 @@ a:active {
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid rgb(75, 147, 177);
+  color: rgb(75, 147, 177);
 }
 
 .btn:hover,
