@@ -7,6 +7,7 @@ body {
   font-size: 20px;
 }
 
+
 .row {
   max-width: 1140px;
   margin: 0 auto;
@@ -38,4 +39,12 @@ body {
 .my-carousel {
   position: absolute;
   top: 0;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  font-family:
+  font-family: 'Alegreya Sans', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 50px !important;
 }

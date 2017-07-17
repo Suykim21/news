@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="{% static 'news_app/css/animate.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/ionicons.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/normalize.css' %}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/grid.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,500,500i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="{% static 'news_app/index.js'%}"></script>
     <link rel="stylesheet" href="{% static 'news_app/css/index.css'%}" type="text/css">
     <meta charset="utf-8">
@@ -44,22 +44,42 @@
           <div class="carousel-inner">
             <div class="item active">
               <img src="{% static 'news_app/img/politics.jpg' %}" alt="politics">
+              <div class="carousel-caption">
+                <h3>Politics</h3>
+                <p>Real News</p>
+              </div>
             </div>
 
             <div class="item">
               <img src="{% static 'news_app/img/finance.jpg' %}" alt="finance">
+              <div class="carousel-caption">
+                <h3>Business-Finance</h3>
+                <p>Always up-to-date</p>
+              </div>
             </div>
 
             <div class="item">
               <img src="{% static 'news_app/img/tech.jpg' %}" alt="tech">
+              <div class="carousel-caption">
+                <h3>Technology</h3>
+                <p>New products and its features</p>
+              </div>
             </div>
 
             <div class="item">
               <img src="{% static 'news_app/img/sports.jpg' %}" alt="sports">
+              <div class="carousel-caption">
+                <h3>Sports</h3>
+                <p>Player's stats</p>
+              </div>
             </div>
 
             <div class="item">
               <img src="{% static 'news_app/img/entertainment.jpg' %}" alt="entertainment">
+              <div class="carousel-caption">
+                <h3>Entertainment</h3>
+                <p>Celebrity News</p>
+              </div>
             </div>
           </div>
 
@@ -76,8 +96,11 @@
 
     </header>
 
-    <section>
-      <h1>hello world</h1>
+    <section class="section-news">
+      <div class="row">
+        <h2>Lastest News</h2>
+        
+      </div>
     </section>
   </body>
 </html>
