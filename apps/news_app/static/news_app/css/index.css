@@ -164,3 +164,7 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid rgb(26, 175, 238);
 }
+
+.my-carousel .carousel-inner img {
+  width: 100%;
+}
