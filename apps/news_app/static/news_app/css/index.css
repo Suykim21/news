@@ -110,31 +110,31 @@ a:active {
 
 .btn-full:link,
 .btn-full:visited {
-  background-color: rgb(75, 147, 177);
-  border: 1px solid rgb(75, 147, 177);
+  background-color: rgb(26, 175, 238);
+  border: 1px solid rgb(26, 175, 238);
   color: #fff;
   margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid rgb(26, 175, 238);
+  color: rgb(26, 175, 238);
 }
 
 .btn:hover,
 .btn:active {
-  background-color: rgb(75, 147, 177);
+  background-color: rgb(26, 175, 238);
 }
 
 .btn-ghost:hover,
 .btn-full:active {
-  border: 1px solid rgb(75, 147, 177);
+  border: 1px solid rgb(26, 175, 238);
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid rgb(75, 147, 177);
+  border: 1px solid rgb(26, 175, 238);
   color: #fff;
 }
 
@@ -202,6 +202,7 @@ header {
     border-bottom: 2px solid rgb(26, 175, 238);
 }
 
+<<<<<<< HEAD
 /* ----------------------------------------------- */
 /* FEATURES */
 /* ----------------------------------------------- */
@@ -211,3 +212,8 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+=======
+.my-carousel .carousel-inner img {
+  width: 100%;
+}
+>>>>>>> e0e296cc707850c30e094387d16290c34d3207e3
