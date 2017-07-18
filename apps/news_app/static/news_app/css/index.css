@@ -43,23 +43,60 @@ h1 {
   letter-spacing: 1px;
 }
 
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* ----- PARAGRAPHS ----- */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 22%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ----- ICONS ----- */
+.icon-big {
+    font-size: 350%;
+    display: block;
+    margin: auto;
+    width: 30%;
+    color: rgb(75, 147, 177);
+    margin-bottom: 10px;
+}
+
 /* ----- LINKS ----- */
-/*
+
 a:link,
 a:visited {
-  color: #e67e22;
-  text-decoration: none;
-  padding-bottom: 1px;
-  border-bottom: 1px solid #e67e22;
-  -webkit-transition: border-bottom 0.2s, color 0.2s;
-  transition: border-bottom 0.2s, color 0.2s;
+    color: #555;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgb(75, 147, 177);
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
 }
 
 a:hover,
 a:active {
-  color: #555;
-  border-bottom: 1px solid transparent;
-}*/
+    color: rgb(75, 147, 177);
+
+    border-bottom: 1px solid transparent;
+}
+
+/* ----- BUTTONS ----- */
 
 .btn:link,
 .btn:visited {
@@ -165,6 +202,12 @@ header {
     border-bottom: 2px solid rgb(26, 175, 238);
 }
 
-.my-carousel .carousel-inner img {
-  width: 100%;
+/* ----------------------------------------------- */
+/* FEATURES */
+/* ----------------------------------------------- */
+
+
+.section-features h2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
