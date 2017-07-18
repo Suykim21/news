@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{% static 'news_app/css/index.css'%}" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,500,500i,700" rel="stylesheet">
     <meta charset="utf-8">
-    <title>News Aggregator</title>
+    <title>Flash News</title>
   </head>
 
   <body>
@@ -27,7 +27,7 @@
           </ul>
         </div>
         <div class="news-text-box">
-          <h1>Flash News <br>Up-to-date content in single view.</h1>
+          <h1>Flash News <br>Up-to-date news in single view.</h1>
           <a class="btn btn-full" href="#">Flash it!</a>
           <a class="btn btn-ghost "href="#subscription">Subscribe</a>
         </div>
@@ -125,5 +125,71 @@
         </div>
       </div>
     </section>
+
+
+          <section class="section-form">
+            <i class="ion-paper-airplane icon-big" style="    display: block; margin: auto; width: 1%;"></i>
+            <div class="row">
+                <h2>Get updates straight to your inbox</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <a class="btn btn-full" href="#">Submit!</a>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Sources</a></li>
+                        <li><a href="#">Thanks</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Flash News is a Kim & Kiernan production<br>
+                    Feel free to reach out at KimAndKiernan@gmail.com
+                </p>
+            </div>
+        </footer>
+
   </body>
 </html>
