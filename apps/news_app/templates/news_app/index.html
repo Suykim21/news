@@ -41,112 +41,89 @@
         <h2 style="padding-bottom: 0;">Get news fast &mdash; not fast news</h2>
         <i class="ion-minus-round icon-big" style="    display: block; margin: auto; width: 1%;"></i>
           <p class="long-copy">
-            Break the echo chamber! Topical news from a diverse viriety of sources at your fingertips.
+            Break the echo chamber! Topical news from a diverse variety of sources at your fingertips.
           </p>
       </div>
 
       <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <i class="ion-earth icon-big"></i>
-          <a href="{{urls.0}}" target="_blank"><h3>{{titles.0}}</h3></a>
+          <a href="{{urls.0}}" target="_blank"><h3>{{titles.0}}<br></h3></a>
           <p>{{pub.0}}</p>
           <p>{{descriptions.0}}</p>
         </div>
         <div class="col span-1-of-4 box">
           <i class="ion-ios-camera icon-big"></i>
-          <a href="{{urls.1}}" target="_blank"><h3>{{titles.1}}</h3></a>
+          <a href="{{urls.1}}" target="_blank"><h3>{{titles.1}}<br></h3></a>
           <p>{{pub.1}}</p>
           <p>{{descriptions.1}}</p>
         </div>
         <div class="col span-1-of-4 box">
           <i class="ion-ios-monitor icon-big"></i>
-          <a href="{{urls.2}}" target="_blank"><h3>{{titles.2}}</h3></a>
+          <a href="{{urls.2}}" target="_blank"><h3>{{titles.2}}<br></h3></a>
           <p>{{pub.2}}</p>
           <p>{{descriptions.2}}</p>
         </div>
         <div class="col span-1-of-4 box">
           <i class="ion-ios-americanfootball icon-big"></i>
-          <a href="{{urls.3}}" target="_blank"><h3>{{titles.3}}</h3></a>
-          <p>{{pub.3}}</p>
+          <a href="{{urls.3}}" target="_blank"><h3>{{titles.3}}<br></h3></a>
+          <p>{{ pub.3}}</p>
           <p>{{descriptions.3}}</p>
         </div>
       </div>
     </section>
 
     <section class="section-news">
-      <ul class="news-showcase clearfix">
-        <li>
-          <figure class="news-photo">
-            <a target="_blank" href="{{urls.0}}">
-              <figcaption><p>{{titles.0}}</p></figcaption>
-              <img src="{{images.0}}" alt="{{titles.0}}">
-            </a>
-          </figure>
-        </li>
+      <div class="row">
+        <h2 style="padding-bottom: 0;">Current News</h2>
+        <i class="ion-minus-round icon-big" style="    display: block; margin: auto; width: 1%;"></i>
+      </div>
 
-        <li>
-          <figure class="news-photo">
-            <a target="_blank" href="{{urls.1}}">
-              <figcaption><p>{{titles.1}}</p></figcaption>
-              <img src="{{images.1}}" alt="{{titles.1}}">
-            </a>
-          </figure>
-        </li>
+      <div class="row">
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/hufflogo.jpg'%}" alt="huffpost" class="logos">
+          <a href="{{urls.0}}" target="_blank"><img src="{{images.0}}" alt="{{titles.0}}" height="180" width="250"><br></h3></a>
+          <p class="text">{{titles.0}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/tclogo.jpg'%}" alt="techcrunch" class="logos">
+          <a href="{{urls.2}}" target="_blank" class="links"><img src="{{images.2}}" alt="{{titles.2}}" height="180" width="250"><br></h3></a>
+          <p class="text">{{titles.2}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/foxsports.jpg'%}" alt="foxsports" class="logos">
+          <a href="{{urls.3}}" target="_blank" class="links"><img src="{{images.3}}" alt="{{titles.3}}" height="180" width="250"><br></h3></a>
+          <p class="text">{{titles.3}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/ew.jpg'%}" alt="techcrunch" class="logos">
+          <a href="{{urls.1}}" target="_blank" class="links"><img src="{{images.1}}" alt="{{titles.1}}" height="180" width="250"><br></h3></a>
+          <p class="text">{{titles.1}}</p>
+        </div>
+      </div>
 
-        <li>
-          <figure class="news-photo">
-            <a target="_blank" href="{{urls.2}}">
-              <figcaption><p>{{titles.2}}</p></figcaption>
-              <img src="{{images.2}}" alt="{{titles.2}}">
-            </a>
-          </figure>
-        </li>
-        <li>
-          <figure class="news-photo">
-            <a target="_blank" href="{{urls.3}}">
-              <figcaption><p>{{titles.3}}</p></figcaption>
-              <img src="{{images.3}}" alt="{{titles.3}}">
-            </a>
-          </figure>
-        </li>
-      </ul>
-
-      <ul class="news-showcase clearfix">
-        <li>
-          <figure class="news-photo">
-            <a target="_blank" href="{{urls.4}}">
-              <figcaption><p>{{titles.4}}</p></figcaption>
-              <img src="{{images.4}}" alt="{{titles.4}}">
-            </a>
-          </figure>
-        </li>
-
-        <li>
-          <figure class="news-photo">
-            <a target="_blank" href="{{urls.5}}">
-              <figcaption><p>{{titles.5}}</p></figcaption>
-              <img src="{{images.5}}" alt="{{titles.5}}">
-            </a>
-          </figure>
-        </li>
-
-        <li>
-          <figure class="news-photo">
-            <a target="_blank" href="{{urls.6}}">
-              <figcaption><p>{{titles.6}}</p></figcaption>
-              <img src="{{images.6}}" alt="{{titles.6}}">
-            </a>
-          </figure>
-        </li>
-        <li>
-          <figure class="news-photo">
-            <a target="_blank" href="{{urls.7}}">
-              <figcaption><p>{{titles.7}}</p></figcaption>
-              <img src="{{images.7}}" alt="{{titles.7}}">
-            </a>
-          </figure>
-        </li>
-      </ul>
+      <div class="row">
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/britbart.jpg'%}" alt="brietbart" class="logos">
+          <a href="{{urls.4}}" target="_blank"><img src="{{images.4}}" alt="{{titles.4}}" height="180" width="236"><br></h3></a>
+          <p class="text">{{titles.4}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/recodelogo.jpg'%}" alt="techcrunch" class="logos">
+          <a href="{{urls.6}}" target="_blank" class="links"><img src="{{images.6}}" alt="{{titles.6}}" height="180" width="236"><br></h3></a>
+          <p class="text">{{titles.6}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/sportbible.jpg'%}" alt="foxsports" class="logos">
+          <a href="{{urls.7}}" target="_blank" class="links"><img src="{{images.7}}" alt="{{titles.7}}" height="180" width="236"><br></h3></a>
+          <p class="text">{{titles.7}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/mtv.png'%}" alt="mtv" class="logos">
+          <a href="{{urls.5}}" target="_blank" class="links"><img src="{{images.5}}" alt="{{titles.5}}" height="180" width="236"><br></h3></a>
+          <p class="text">{{titles.5}}</p>
+        </div>
+      </div>
     </section>
   </body>
 </html>

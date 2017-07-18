@@ -108,11 +108,15 @@ def index(request):
   descriptions.append(dataS[u'articles'][x][u'description'])
   urls.append(dataS[u'articles'][x][u'url'])
   pub.append(dataS[u'articles'][x][u'publishedAt'])
+
+
   context = {
     'images': images,
     'titles': titles,
     'descriptions': descriptions,
     'urls': urls,
-    'pub': pub
+    'pub': pub,
   }
+
+
   return render(request, 'news_app/index.html', context)
