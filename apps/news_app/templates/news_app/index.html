@@ -19,7 +19,7 @@
         <div class="row">
           <img src="{% static 'news_app/img/newslogo1.png'%}" alt="flash_logo" class="logo">
           <ul class="main-nav">
-            <li><a href="#politics">Poltics</a></li>
+            <li><a href="#politics">Politics</a></li>
             <li><a href="#tech">Tech</a></li>
             <li><a href="#sports">Sports</a></li>
             <li><a href="#entertainment">Entertainment</a></li>
@@ -36,91 +36,122 @@
     </header>
 
     <section class="section-features js--section-features" id="features">
-            <div class="row">
-                <h2>Get food fast &mdash; not fast food</h2>
-                <p class="long-copy">
-                    Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!
+      <div class="row">
+        <h2>Get food fast &mdash; not fast food</h2>
+            <p class="long-copy">
+              Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!
+            </p>
+      </div>
+
+      <div class="row js--wp-1">
+        <div class="col span-1-of-4 box">
+          <i class="ion-ios-infinite-outline icon-big"></i>
+            <h3>Up to 365 days/year</h3>
+              <p>
+                Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+              </p>
+        </div>
+          <div class="col span-1-of-4 box">
+            <i class="ion-ios-stopwatch-outline icon-big"></i>
+              <h3>Ready in 20 minutes</h3>
+                <p>
+                  You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
                 </p>
-            </div>
+          </div>
+          <div class="col span-1-of-4 box">
+            <i class="ion-ios-nutrition-outline icon-big"></i>
+              <h3>100% organic</h3>
+                <p>
+                  All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+                </p>
+          </div>
+          <div class="col span-1-of-4 box">
+            <i class="ion-ios-cart-outline icon-big"></i>
+              <h3>Order anything</h3>
+                <p>
+                  We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+                </p>
+          </div>
+      </div>
+    </section>
 
-            <div class="row js--wp-1">
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-infinite-outline icon-big"></i>
-                    <h3>Up to 365 days/year</h3>
-                    <p>
-                        Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-stopwatch-outline icon-big"></i>
-                    <h3>Ready in 20 minutes</h3>
-                    <p>
-                        You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-nutrition-outline icon-big"></i>
-                    <h3>100% organic</h3>
-                    <p>
-                        All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-cart-outline icon-big"></i>
-                    <h3>Order anything</h3>
-                    <p>
-                        We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
-                    </p>
-                </div>
-            </div>
-        </section>
+    <section class="section-news">
+      <ul class="news-showcase clearfix">
+        <li>
+          <figure class="news-photo">
+            <a target="_blank" href="{{urls.0}}">
+              <figcaption><p>{{titles.0}}</p></figcaption>>
+              <img src="{{images.0}}" alt="{{titles.0}}">
+            </a>
+          </figure>
+        </li>
 
-        <section class="section-meals">
-            <ul class="meals-showcase clearfix">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
-                    </figure>
-                </li>
-            </ul>
-            <ul class="meals-showcase clearfix">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="{{images.0}}" alt="Burger with cheddar and bacon">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
-                    </figure>
-                </li>
-            </ul>
-        </section>
+        <li>
+          <figure class="news-photo">
+            <a target="_blank" href="{{urls.1}}">
+              <figcaption><p>{{titles.1}}</p></figcaption>
+              <img src="{{images.1}}" alt="{{titles.1}}">
+            </a>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="news-photo">
+            <a target="_blank" href="{{urls.2}}">
+              <figcaption><p>{{titles.2}}</p></figcaption>
+              <img src="{{images.2}}" alt="{{titles.2}}">
+            </a>
+          </figure>
+        </li>
+        <li>
+          <figure class="news-photo">
+            <a target="_blank" href="{{urls.3}}">
+              <figcaption><p>{{titles.3}}</p></figcaption>
+              <img src="{{images.3}}" alt="{{titles.3}}">
+            </a>
+          </figure>
+        </li>
+      </ul>
+
+      <ul class="news-showcase clearfix">
+        <li>
+          <figure class="news-photo">
+            <a target="_blank" href="{{urls.4}}">
+              <figcaption><p>{{titles.4}}</p></figcaption>
+              <img src="{{images.4}}" alt="{{titles.4}}">
+            </a>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="news-photo">
+            <a target="_blank" href="{{urls.5}}">
+              <figcaption><p>{{titles.5}}</p></figcaption>
+              <img src="{{images.5}}" alt="{{titles.5}}">
+            </a>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="news-photo">
+            <a target="_blank" href="{{urls.6}}">
+              <figcaption><p>{{titles.6}}</p></figcaption>
+              <img src="{{images.6}}" alt="{{titles.6}}">
+            </a>
+          </figure>
+        </li>
+
+
+        <li>
+          <figure class="news-photo">
+            <a target="_blank" href="{{urls.7}}">
+              <figcaption><p>{{titles.7}}</p></figcaption>
+              <img src="{{images.7}}" alt="{{titles.7}}">
+            </a>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
   </body>
 </html>

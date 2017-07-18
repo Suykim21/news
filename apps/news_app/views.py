@@ -8,6 +8,7 @@ def index(request):
   images = []
   titles = []
   descriptions = []
+  urls = []
   # Huffington Post API call
   responseH = requests.get('https://newsapi.org/v1/articles?source=the-huffington-post&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
   #cached HuffPo data
@@ -15,6 +16,7 @@ def index(request):
   print dataH
   images.append(dataH[u'articles'][0][u'urlToImage'])
   titles.append(dataH[u'articles'][0][u'title'])
+  urls.append(dataH[u'articles'][0][u'url'])
   descriptions.append(dataH[u'articles'][0][u'description'])
   #Entertainment Weekly API
   responseE = requests.get('https://newsapi.org/v1/articles?source=entertainment-weekly&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
@@ -22,6 +24,7 @@ def index(request):
   dataE = responseE.json()
   images.append(dataE[u'articles'][0][u'urlToImage'])
   titles.append(dataE[u'articles'][0][u'title'])
+  urls.append(dataE[u'articles'][0][u'url'])
   descriptions.append(dataE[u'articles'][0][u'description'])
   #Tech Crunch API call
   responseT = requests.get('https://newsapi.org/v1/articles?source=techcrunch&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
@@ -29,6 +32,7 @@ def index(request):
   dataT = responseT.json()
   images.append(dataT[u'articles'][0][u'urlToImage'])
   titles.append(dataT[u'articles'][0][u'title'])
+  urls.append(dataT[u'articles'][0][u'url'])
   descriptions.append(dataT[u'articles'][0][u'description'])
   #Fox Sports API call
   responseF = requests.get('https://newsapi.org/v1/articles?source=fox-sports&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
@@ -36,6 +40,7 @@ def index(request):
   dataF = responseF.json()
   images.append(dataF[u'articles'][0][u'urlToImage'])
   titles.append(dataF[u'articles'][0][u'title'])
+  urls.append(dataF[u'articles'][0][u'url'])
   descriptions.append(dataF[u'articles'][0][u'description'])
   #Brietbar API
   responseB = requests.get('https://newsapi.org/v1/articles?source=breitbart-news&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
@@ -43,6 +48,7 @@ def index(request):
   dataB = responseB.json()
   images.append(dataB[u'articles'][0][u'urlToImage'])
   titles.append(dataB[u'articles'][0][u'title'])
+  urls.append(dataB[u'articles'][0][u'url'])
   descriptions.append(dataB[u'articles'][0][u'description'])
   #MTV News API
   responseM = requests.get('https://newsapi.org/v1/articles?source=mtv-news&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
@@ -50,6 +56,7 @@ def index(request):
   dataM = responseM.json()
   images.append(dataM[u'articles'][0][u'urlToImage'])
   titles.append(dataM[u'articles'][0][u'title'])
+  urls.append(dataM[u'articles'][0][u'url'])
   descriptions.append(dataM[u'articles'][0][u'description'])
   #Recode API
   responseR = requests.get('https://newsapi.org/v1/articles?source=recode&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
@@ -57,6 +64,7 @@ def index(request):
   dataR = responseR.json()
   images.append(dataR[u'articles'][0][u'urlToImage'])
   titles.append(dataR[u'articles'][0][u'title'])
+  urls.append(dataR[u'articles'][0][u'url'])
   descriptions.append(dataR[u'articles'][0][u'description'])
   #Sports Bible API
   responseS = requests.get('https://newsapi.org/v1/articles?source=the-sport-bible&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
@@ -64,10 +72,12 @@ def index(request):
   dataS = responseS.json()
   images.append(dataS[u'articles'][0][u'urlToImage'])
   titles.append(dataS[u'articles'][0][u'title'])
+  urls.append(dataS[u'articles'][0][u'url'])
   descriptions.append(dataS[u'articles'][0][u'description'])
   context = {
     'images': images,
     'titles': titles,
+    'urls': urls,
     'descriptions': descriptions
   }
   return render(request, 'news_app/index.html', context)
