@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/normalize.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/grid.css' %}">
     <link rel="stylesheet" href="{% static 'news_app/css/animate.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="{% static 'news_app/css/index.css'%}" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,500,500i,700" rel="stylesheet">
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
           </ul>
         </div>
         <div class="news-text-box">
-          <h1>Hello Flash News. <br>Up-to-date content in single view.</h1>
+          <h1>Flash News <br>Up-to-date content in single view.</h1>
           <a class="btn btn-full" href="#">Flash it!</a>
           <a class="btn btn-ghost "href="#subscription">Subscribe</a>
         </div>
@@ -37,40 +37,38 @@
 
     <section class="section-features js--section-features" id="features">
             <div class="row">
-                <h2>Get food fast &mdash; not fast food</h2>
+                <h2 style="padding-bottom: 0;">Get news fast &mdash; not fast news</h2>
+                </p>
+                <i class="ion-minus-round icon-big" style="    display: block; margin: auto; width: 1%;"></i>
                 <p class="long-copy">
-                    Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!
+                    Break the echo chamber! Topical news from a diverse viriety of sources at your fingertips.
                 </p>
             </div>
 
             <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
-                    <i class="ion-ios-infinite-outline icon-big"></i>
-                    <h3>Up to 365 days/year</h3>
-                    <p>
-                        Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
-                    </p>
+                    <i class="ion-earth icon-big"></i>
+                    <a href="{{urls.0}}" target="_blank"><h3>{{titles.0}}</h3></a>
+                    <p>{{pub.0}}</p>
+                    <p>{{descriptions.0}}</p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <i class="ion-ios-stopwatch-outline icon-big"></i>
-                    <h3>Ready in 20 minutes</h3>
-                    <p>
-                        You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
-                    </p>
+                    <i class="ion-ios-camera icon-big"></i>
+                    <a href="{{urls.1}}" target="_blank"><h3>{{titles.1}}</h3></a>
+                    <p>{{pub.1}}</p>                    
+                    <p>{{descriptions.1}}</p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <i class="ion-ios-nutrition-outline icon-big"></i>
-                    <h3>100% organic</h3>
-                    <p>
-                        All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
-                    </p>
+                    <i class="ion-ios-monitor icon-big"></i>
+                    <a href="{{urls.2}}" target="_blank"><h3>{{titles.2}}</h3></a>
+                    <p>{{pub.2}}</p>                    
+                    <p>{{descriptions.2}}</p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <i class="ion-ios-cart-outline icon-big"></i>
-                    <h3>Order anything</h3>
-                    <p>
-                        We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
-                    </p>
+                    <i class="ion-ios-americanfootball icon-big"></i>
+                    <a href="{{urls.3}}" target="_blank"><h3>{{titles.3}}</h3></a>
+                    <p>{{pub.3}}</p>                    
+                    <p>{{descriptions.3}}</p>
                 </div>
             </div>
         </section>
@@ -121,6 +119,13 @@
                 </li>
             </ul>
         </section>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="{% static 'news_app/js/jquery.waypoints.min.js'%} "></script>
+        <script src="{% static 'news_app/js/index.js'%} "></script>
 
   </body>
 </html>
