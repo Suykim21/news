@@ -45,7 +45,6 @@ def index(request):
   print e
   f = random.randint(0,e)
   print f
-  print dataT
   images.append(dataT[u'articles'][f][u'urlToImage'])
   titles.append(dataT[u'articles'][f][u'title'])
   descriptions.append(dataT[u'articles'][f][u'description'])
@@ -119,6 +118,4 @@ def index(request):
     'urls': urls,
     'pub': pub,
   }
-
-
   return render(request, 'news_app/index.html', context)
