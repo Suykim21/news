@@ -348,14 +348,11 @@ footer {
     font-size: 80%;
 }
 
-.footer-nav {
-    list-style: none;
-    float: left;
-}
-
 .social-links {
     list-style: none;
-    float: right;
+    display: block;
+    margin: auto;
+    padding-left: 44%;
 }
 
 .footer-nav li,
@@ -422,36 +419,23 @@ footer p {
 }
 
 
-
-
 /* ----------------------------------------------- */
 /* Animations */
 /* ----------------------------------------------- */
-/*
-.js--wp-1,
-.js--wp-2,
-.js--wp-3
-{
-    opacity: 0;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
 
-.js--wp-4 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+.js--wp-1,
+.js--wp-2 {
+  opacity: 0;
 }
 
 .js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated {
-    opacity: 1;
-}*/
-
+.js--wp-2.animated {
+  opacity: 1;
+}
 
 .jake {
   height: 100px;
-  background-color: darkblue;
+  background-color: pink;
 }
 
 .steve {
