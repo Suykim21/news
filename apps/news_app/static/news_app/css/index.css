@@ -173,11 +173,19 @@ header {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.logo {
+.logo, {
   height: 100px;
   width: auto;
   float: left;
   margin-top: 20px;
+}
+
+.logo-nav {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 5px 0;
 }
 
 .logo:hover {
@@ -223,14 +231,33 @@ header {
     border-bottom: 2px solid rgb(26, 175, 238);
 }
 
-
-/* ----- STICKY NAVBAR ----- */
-nav.shrink {
-  background-color:rgb(55, 100, 112);
-  height: 60px;
-  padding-top: 0px;
+/* Sticky Nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
 }
 
+.main-nav {
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 10px 0;
+  color: #555;
+}
+
+.sticky .logo {
+   display: none;
+}
+
+.sticky .logo-nav {
+  display: block;
+}
 
 /* ----------------------------------------------- */
 /* FEATURES */
