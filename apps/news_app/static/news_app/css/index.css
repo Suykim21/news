@@ -223,6 +223,15 @@ header {
     border-bottom: 2px solid rgb(26, 175, 238);
 }
 
+
+/* ----- STICKY NAVBAR ----- */
+nav.shrink {
+  background-color:rgb(55, 100, 112);
+  height: 60px;
+  padding-top: 0px;
+}
+
+
 /* ----------------------------------------------- */
 /* FEATURES */
 /* ----------------------------------------------- */

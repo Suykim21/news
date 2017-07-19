@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
   // click flash it button
@@ -24,3 +25,4 @@ $(document).ready(function() {
   });
   
 }); 
+
