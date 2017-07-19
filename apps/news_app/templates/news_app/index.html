@@ -29,8 +29,8 @@
         </div>
         <div class="news-text-box">
           <h1>Flash News <br>Up-to-date news in single view.</h1>
-          <a class="btn btn-full" href="#">Flash it!</a>
-          <a class="btn btn-ghost "href="#subscription">Subscribe</a>
+          <a class="btn btn-full js--scroll-to-latest" href="#">Flash it!</a>
+          <a class="btn btn-ghost js--scroll-to-subscription"href="#subscription">Subscribe</a>
         </div>
 
       </nav>
@@ -75,69 +75,71 @@
     </section>
 
     <section class="jake">
-      <h1>Animate</h1>
+      <h1>Jake</h1>
     </section>
 
     <section class="steve">
-      <h1>Animate</h1>
+      <h1>Steve</h1>
     </section>
 
-    <section class="section-news">
+    <section class="section-news js--section-news">
       <div class="row">
         <h2 style="padding-bottom: 0;">Current News</h2>
         <i class="ion-minus-round icon-big" style="    display: block; margin: auto; width: 1%;"></i>
       </div>
 
-      <div class="row">
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/hufflogo.jpg'%}" alt="huffpost" class="logos">
-          <a href="{{urls.0}}" target="_blank"><img src="{{images.0}}" alt="{{titles.0}}" height="180" width="250"><br></h3></a>
-          <!--<p class="text">{{titles.0}}</p>-->
+      <div class="js--wp-2">
+        <div class="row ">
+          <div class="col span-1-of-4 box">
+            <img src="{% static 'news_app/img/hufflogo.jpg'%}" alt="huffpost" class="logos">
+            <a href="{{urls.0}}" target="_blank"><img src="{{images.0}}" alt="{{titles.0}}" height="180" width="250"><br></h3></a>
+            <!--<p class="text">{{titles.0}}</p>-->
+          </div>
+          <div class="col span-1-of-4 box">
+            <img src="{% static 'news_app/img/tclogo.jpg'%}" alt="techcrunch" class="logos">
+            <a href="{{urls.2}}" target="_blank" class="links"><img src="{{images.2}}" alt="{{titles.2}}" height="180" width="250"><br></h3></a>
+            <!--<p class="text">{{titles.2}}</p>-->
+          </div>
+          <div class="col span-1-of-4 box">
+            <img src="{% static 'news_app/img/foxsports.jpg'%}" alt="foxsports" class="logos">
+            <a href="{{urls.3}}" target="_blank" class="links"><img src="{{images.3}}" alt="{{titles.3}}" height="180" width="250"><br></h3></a>
+            <!--<p class="text">{{titles.3}}</p>-->
+          </div>
+          <div class="col span-1-of-4 box">
+            <img src="{% static 'news_app/img/ew.jpg'%}" alt="techcrunch" class="logos">
+            <a href="{{urls.1}}" target="_blank" class="links"><img src="{{images.1}}" alt="{{titles.1}}" height="180" width="250"><br></h3></a>
+            <!--<p class="text">{{titles.1}}</p>-->
+          </div>
         </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/tclogo.jpg'%}" alt="techcrunch" class="logos">
-          <a href="{{urls.2}}" target="_blank" class="links"><img src="{{images.2}}" alt="{{titles.2}}" height="180" width="250"><br></h3></a>
-          <!--<p class="text">{{titles.2}}</p>-->
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/foxsports.jpg'%}" alt="foxsports" class="logos">
-          <a href="{{urls.3}}" target="_blank" class="links"><img src="{{images.3}}" alt="{{titles.3}}" height="180" width="250"><br></h3></a>
-          <!--<p class="text">{{titles.3}}</p>-->
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/ew.jpg'%}" alt="techcrunch" class="logos">
-          <a href="{{urls.1}}" target="_blank" class="links"><img src="{{images.1}}" alt="{{titles.1}}" height="180" width="250"><br></h3></a>
-          <p class="text">{{titles.1}}</p>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/britbart.jpg'%}" alt="brietbart" class="logos">
-          <a href="{{urls.4}}" target="_blank"><img src="{{images.4}}" alt="{{titles.4}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.4}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/recodelogo.jpg'%}" alt="techcrunch" class="logos">
-          <a href="{{urls.6}}" target="_blank" class="links"><img src="{{images.6}}" alt="{{titles.6}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.6}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/sportbible.jpg'%}" alt="foxsports" class="logos">
-          <a href="{{urls.7}}" target="_blank" class="links"><img src="{{images.7}}" alt="{{titles.7}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.7}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/mtv.png'%}" alt="mtv" class="logos">
-          <a href="{{urls.5}}" target="_blank" class="links"><img src="{{images.5}}" alt="{{titles.5}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.5}}</p>
+        <div class="row">
+          <div class="col span-1-of-4 box">
+            <img src="{% static 'news_app/img/britbart.jpg'%}" alt="brietbart" class="logos">
+            <a href="{{urls.4}}" target="_blank"><img src="{{images.4}}" alt="{{titles.4}}" height="180" width="236"><br></h3></a>
+            <!--<p class="text">{{titles.4}}</p>-->
+          </div>
+          <div class="col span-1-of-4 box">
+            <img src="{% static 'news_app/img/recodelogo.jpg'%}" alt="techcrunch" class="logos">
+            <a href="{{urls.6}}" target="_blank" class="links"><img src="{{images.6}}" alt="{{titles.6}}" height="180" width="236"><br></h3></a>
+            <!--<p class="text">{{titles.6}}</p>-->
+          </div>
+          <div class="col span-1-of-4 box">
+            <img src="{% static 'news_app/img/sportbible.jpg'%}" alt="foxsports" class="logos">
+            <a href="{{urls.7}}" target="_blank" class="links"><img src="{{images.7}}" alt="{{titles.7}}" height="180" width="236"><br></h3></a>
+            <!--<p class="text">{{titles.7}}</p>-->
+          </div>
+          <div class="col span-1-of-4 box">
+            <img src="{% static 'news_app/img/mtv.png'%}" alt="mtv" class="logos">
+            <a href="{{urls.5}}" target="_blank" class="links"><img src="{{images.5}}" alt="{{titles.5}}" height="180" width="236"><br></h3></a>
+            <!--<p class="text">{{titles.5}}</p>-->
+          </div>
         </div>
       </div>
     </section>
 
 
-          <section class="section-form">
-            <i class="ion-paper-airplane icon-big" style="    display: block; margin: auto; width: 1%;"></i>
+          <section class="section-form js--subscription">
+            <i class="ion-paper-airplane icon-big" style=" display: block; margin: auto; width: 1%;"></i>
             <div class="row">
                 <h2>Get updates straight to your inbox</h2>
             </div>
@@ -164,7 +166,7 @@
                             <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <a class="btn btn-full" href="#">Submit!</a>
+                            <a class="btn btn-full" href="#" style="margin-left: 170px;">Submit!</a>
                         </div>
                     </div>
 
@@ -175,33 +177,22 @@
 
         <footer>
             <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Sources</a></li>
-                        <li><a href="#">Thanks</a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                    </ul>
-                </div>
+              <ul class="social-links">
+                  <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                  <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                  <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                  <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+              </ul>
             </div>
             <div class="row">
                 <p>
-                    Flash News is a Kim & Kiernan production<br>
-                    Feel free to reach out at KimAndKiernan@gmail.com
+                    Flash News is a Kiernan & Kim production<br>
                 </p>
             </div>
         </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="{% static 'news_app/js/jquery.waypoints.min.js.js' %}"></script>
+    <script src="{% static 'news_app/js/jquery.waypoints.min.js' %}"></script>
     <script src="{% static 'news_app/js/index.js' %}"></script>
   </body>
 </html>
