@@ -1,5 +1,5 @@
-
 $(document).ready(function() {
+
 
   // click flash it button
   $('.js--scroll-to-latest').click(function() {
@@ -23,6 +23,5 @@ $(document).ready(function() {
   }, {
     offset: '50%'
   });
-  
-}); 
 
+});
