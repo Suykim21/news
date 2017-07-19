@@ -273,11 +273,84 @@ header {
   padding-bottom: 40px;
 }
 
+/* ----------------------------------------------- */
+/* Politics */
+/* ----------------------------------------------- */
+
+.pol_par {
+  padding-top: 60px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('politics_par.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  background-attachment: fixed;
+  color: white;
+}
+
+.pol_par h1 {
+  padding-left: 20vw;
+  line-height: 40vh;
+}
+
+.politics {
+  height: 80vh;
+  color: black;
+}
+
+.politcs img {
+  margin: 0;
+  padding: 10px;
+}
+
+/* ----------------------------------------------- */
+/* Sports */
+/* ----------------------------------------------- */
+
+.sports_par {
+  padding-top: 60px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sports_par.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+  background-attachment: fixed;
+  color: white;
+}
+
+.sports_par h1 {
+  float: right;
+  padding-right: 20vw;
+  line-height: 40vh;
+}
+
+.sports {
+  height: 80vh;
+}
+
+.sports img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 /* --------------------------------------------*/
 /*NEWS PHOTOS*/
 /*---------------------------------------------*/
 
+.current_par {
+  padding-top: 60px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('current_par.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  background-attachment: fixed;
+  color: white;
+}
+
+.current_par h1 {
+  text-align: center;
+  line-height: 40vh;
+}
 
 .section-news {
   padding: 0;
@@ -461,12 +534,3 @@ footer p {
   opacity: 1;
 }
 
-.jake {
-  height: 100px;
-  background-color: pink;
-}
-
-.steve {
-  height: 100px;
-  background-color: darkred;
-}
