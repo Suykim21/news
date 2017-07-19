@@ -75,10 +75,10 @@ h3 {
     margin-left: 22%;
 }
 
-.box p {
+/*.box p {
     font-size: 90%;
     line-height: 145%;
-}
+}*/
 
 
 /* ----- ICONS ----- */
@@ -261,15 +261,6 @@ nav.shrink {
   overflow: hidden;
 }
 
-.text {
-  visibility: hidden;
-  position: relative;
-  top: -125px;
-  max-width: 225px;
-  max-height: 175px;
-  text-align: center;
-  padding-left: 30px;
-}
 
 .box img {
   opacity: 1;
@@ -291,6 +282,15 @@ nav.shrink {
   color: rgb(15, 45, 57);
 }
 
+.text {
+  visibility: hidden;
+  position: relative;
+  top: -125px;
+  max-width: 225px;
+  max-height: 175px;
+  text-align: center;
+  padding-left: 30px;
+}
 
 /* ----------------------------------------------- */
 /* FORM */
@@ -447,3 +447,14 @@ footer p {
 .js--wp-3.animated {
     opacity: 1;
 }*/
+
+
+.jake {
+  height: 100px;
+  background-color: darkblue;
+}
+
+.steve {
+  height: 100px;
+  background-color: darkred;
+}
