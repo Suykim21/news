@@ -1,8 +1,10 @@
 from __future__ import unicode_literals
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
+from .models import User
 import requests
 from datetime import datetime
 import random
+
 
 
 def index(request):
@@ -119,3 +121,7 @@ def index(request):
     'pub': pub,
   }
   return render(request, 'news_app/index.html', context)
+
+def subscribe(request):
+  User.objects.create(name=request.POST['name'], email=request.POST['email'])
+  return redirect('home')

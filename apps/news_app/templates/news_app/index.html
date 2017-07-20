@@ -110,59 +110,37 @@
           <p class="text">{{titles.1}}</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/britbart.jpg'%}" alt="brietbart" class="logos">
-          <a href="{{urls.4}}" target="_blank"><img src="{{images.4}}" alt="{{titles.4}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.4}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/recodelogo.jpg'%}" alt="techcrunch" class="logos">
-          <a href="{{urls.6}}" target="_blank" class="links"><img src="{{images.6}}" alt="{{titles.6}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.6}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/sportbible.jpg'%}" alt="foxsports" class="logos">
-          <a href="{{urls.7}}" target="_blank" class="links"><img src="{{images.7}}" alt="{{titles.7}}" height="180" width="236"><br></h3></a>
+    </section>
 
-          <p class="text">{{titles.7}}</p>
+    <section class="pol_par">
+      <h1 style="font-size: 300%">Politics</h1>
+    </section>
+
+    <section class="politics">
+      <div class="col span-1-of-2 box">
+        <img src="{{images.0}}" alt="{{titles.0}}" style="width: 48vw; margin:auto;">
+        <p>{{titles.0}}</p>
+      </div>
+      <div class="">
+        <div class="col span-1-of-4 box">
+          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
+          <p>{{titles.0}}</p>
         </div>
         <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/mtv.png'%}" alt="mtv" class="logos">
-          <a href="{{urls.5}}" target="_blank" class="links"><img src="{{images.5}}" alt="{{titles.5}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.5}}</p>
+          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
+          <p>{{titles.0}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
+          <p>{{titles.0}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
+          <p>{{titles.0}}</p>
         </div>
       </div>
-  </section>
-
-  <section class="pol_par">
-    <h1 style="font-size: 300%">Politics</h1>
-  </section>
-
-  <section class="politics">
-    <div class="col span-1-of-2 box">
-      <img src="{{images.0}}" alt="{{titles.0}}" style="width: 48vw; margin:auto;">
-      <p>{{titles.0}}</p>
-    </div>
-    <div class="">
-      <div class="col span-1-of-4 box">
-        <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-        <p>{{titles.0}}</p>
-      </div>
-      <div class="col span-1-of-4 box">
-        <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-        <p>{{titles.0}}</p>
-      </div>
-      <div class="col span-1-of-4 box">
-        <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-        <p>{{titles.0}}</p>
-      </div>
-      <div class="col span-1-of-4 box">
-        <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-        <p>{{titles.0}}</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  
 
   <section class="sports_par">
     <h1 style="font-size: 300%">Sports</h1>
@@ -208,41 +186,96 @@
     <h1 style="font-size: 300%">Current Events</h1>
   </section>
 
+<section class="section-news js--section-news">
+    <div class="row">
+      <h2 style="padding-bottom: 0;">Our Partners</h2>
+      <i class="ion-minus-round icon-big" style="    display: block; margin: auto; width: 1%;"></i>
+    </div>
+
+    <div class="js--wp-2">
+      <div class="row ">
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/hufflogo.jpg'%}" alt="huffpost" class="logos">
+          <a href="{{urls.0}}" target="_blank"><img src="{{images.0}}" alt="{{titles.0}}" height="180" width="250"><br></h3></a>
+          <p class="text">{{titles.0}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/tclogo.jpg'%}" alt="techcrunch" class="logos">
+          <a href="{{urls.2}}" target="_blank" class="links"><img src="{{images.2}}" alt="{{titles.2}}" height="180" width="250"><br></h3></a>
+          <p class="text">{{titles.2}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/foxsports.jpg'%}" alt="foxsports" class="logos">
+          <a href="{{urls.3}}" target="_blank" class="links"><img src="{{images.3}}" alt="{{titles.3}}" height="180" width="250"><br></h3></a>
+          <p class="text">{{titles.3}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/ew.jpg'%}" alt="techcrunch" class="logos">
+          <a href="{{urls.1}}" target="_blank" class="links"><img src="{{images.1}}" alt="{{titles.1}}" height="180" width="250"><br></h3></a>
+          <p class="text">{{titles.1}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/britbart.jpg'%}" alt="brietbart" class="logos">
+          <a href="{{urls.4}}" target="_blank"><img src="{{images.4}}" alt="{{titles.4}}" height="180" width="236"><br></h3></a>
+          <p class="text">{{titles.4}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/recodelogo.jpg'%}" alt="techcrunch" class="logos">
+          <a href="{{urls.6}}" target="_blank" class="links"><img src="{{images.6}}" alt="{{titles.6}}" height="180" width="236"><br></h3></a>
+          <p class="text">{{titles.6}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/sportbible.jpg'%}" alt="foxsports" class="logos">
+          <a href="{{urls.7}}" target="_blank" class="links"><img src="{{images.7}}" alt="{{titles.7}}" height="180" width="236"><br></h3></a>
+
+          <p class="text">{{titles.7}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="{% static 'news_app/img/mtv.png'%}" alt="mtv" class="logos">
+          <a href="{{urls.5}}" target="_blank" class="links"><img src="{{images.5}}" alt="{{titles.5}}" height="180" width="236"><br></h3></a>
+          <p class="text">{{titles.5}}</p>
+        </div>
+      </div>
+  </section>
 
 
-  <section class="section-form js--subscription">
-    <i class="ion-paper-airplane icon-big" style=" display: block; margin: auto; width: 1%;"></i>
-    <div class="row">
-      <h2>Get updates straight to your inbox</h2>
-    </div>
-    <div class="row">
-      <form method="post" action="#" class="contact-form">
-        <div class="row">
-          <div class="col span-1-of-3">
-            <label for="name">Name</label>
-          </div>
-          <div class="col span-2-of-3">
-            <input type="text" name="name" id="name" placeholder="Your name" required>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col span-1-of-3">
-            <label for="email">Email</label>
-          </div>
-          <div class="col span-2-of-3">
-            <input type="email" name="email" id="email" placeholder="Your email" required>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col span-1-of-3">
-            <label>&nbsp;</label>
-          </div>
-          <div class="col span-2-of-3">
-            <a class="btn btn-full" href="#" style="margin-left: 170px;">Submit!</a>
-          </div>
-        </div>
-      </form>
-    </div>
+
+    <section class="section-form js--subscription">
+      <i class="ion-paper-airplane icon-big" style=" display: block; margin: auto; width: 1%;"></i>
+      <div class="row">
+          <h2>Get updates straight to your inbox</h2>
+      </div>
+      <div class="row">
+          <form method="post" action="/subscribe" class="contact-form" id="subform">
+              {% csrf_token %}
+              <div class="row">
+                  <div class="col span-1-of-3">
+                      <label for="name">Name</label>
+                  </div>
+                  <div class="col span-2-of-3">
+                      <input type="text" name="name" id="name" placeholder="Your name" required>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col span-1-of-3">
+                      <label for="email">Email</label>
+                  </div>
+                  <div class="col span-2-of-3">
+                      <input type="email" name="email" id="email" placeholder="Your email" required>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col span-1-of-3">
+                      <label>&nbsp;</label>
+                  </div>
+                  <div class="col span-2-of-3">
+                      <button type="submit" form="subform" value="Submit">Submit it!</button>
+                  </div>
+              </div>
+          </form>
+      </div>
   </section>
 
   <footer>
