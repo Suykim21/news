@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
   /* For the sticky navigation */
   $('.js--section-features').waypoint(function(direction) {
     if (direction == "down") {
@@ -12,21 +13,19 @@ $(document).ready(function() {
   });
 
 
-  /* Mobile navigation */
-  $('.js--nav-icon').click(function() {
-    var nav = $('.js--main-nav');
-    var icon = $('.js--nav-icon i');
-
-    nav.slideToggle(200);
-
-    if (icon.hasClass('ion-navicon-round')) {
-      icon.addClass('ion-close-round');
-      icon.removeClass('ion-navicon-round');
-    } else {
-      icon.addClass('ion-navicon-round');
-      icon.removeClass('ion-close-round');
-    }
+  /* Scroll on buttons */
+  $('.js--scroll-to-plans').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.js--section-plans').offset().top
+    }, 1000);
   });
+
+  $('.js--scroll-to-start').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.js--section-features').offset().top
+    }, 1000);
+  });
+
   // click flash it button
   $('.js--scroll-to-latest').click(function() {
     $('html, body').animate({
@@ -41,7 +40,8 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  // Animations on scroll
+
+  //   // Animations on scroll
   $('.js--wp-1').waypoint(function(direction) {
     $('.js--wp-1').addClass('animated fadeIn');
   }, {
@@ -78,4 +78,54 @@ $(document).ready(function() {
     offset: '70%'
   });
 
+  $('.js--wp-19').waypoint(function(direction) {
+    $('.js--wp-20').addClass('animated fadeInUp');
+  }, {
+    offset: '70%'
+  });
+
+  $('.js--wp-19').waypoint(function(direction) {
+    $('.js--wp-21').addClass('animated fadeInUp');
+  }, {
+    offset: '20%'
+  });
+
+  $('.js--wp-20').waypoint(function(direction) {
+    $('.js--wp-22').addClass('animated fadeInUp');
+  });
+
+  $('.js--wp-20').waypoint(function(direction) {
+    $('.js--wp-23').addClass('animated fadeInUp');
+  }, {
+    offset: '20%'
+  });
+
+  $('.js--wp-24').waypoint(function(direction) {
+    $('.js--wp-24').addClass('animated fadeInUp');
+  }, {
+    offset: '60%'
+  });
+
+  $('.js--wp-24').waypoint(function(direction) {
+    $('.js--wp-25').addClass('animated fadeInUp');
+  }, {
+    offset: '50%'
+  });
+
+
+  /* Mobile navigation */
+  $('.js--nav-icon').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+
+    nav.slideToggle(200);
+
+    if (icon.hasClass('ion-navicon-round')) {
+      icon.addClass('ion-close-round');
+      icon.removeClass('ion-navicon-round');
+    } else {
+      icon.addClass('ion-navicon-round');
+      icon.removeClass('ion-close-round');
+    }
+  });
 });

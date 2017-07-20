@@ -344,12 +344,19 @@ header {
 }
 
 .politics {
+  padding: 0;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(45deg, #013A6B 65%, rgb(75, 147, 177) 65%);
   text-decoration: none;
   height: 100%;
   padding: 0;
   width: 100%;
   max-width: 100%;
   margin: 0;
+}
+
+.politics-hero img {
+  border: solid 3px #013A6B;
 }
 
 .politics-hero h3 {
@@ -361,7 +368,7 @@ header {
 }
 
 .politics img {
-  border-radius: 70px;
+  border-radius: 10px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -376,7 +383,7 @@ header {
 }
 
 .politics-hero > * {
-  background-image: -webkit-linear-gradient(40deg, rgb(75, 147, 177) 55%, #e74c3c 55%);
+  /*border: solid 3px rgb(75, 147, 177);*/
   text-decoration: none;
   padding: 10px;
   background-repeat: no-repeat;
@@ -391,16 +398,15 @@ header {
 }
 
 .politicsphotos {
-  background-color: #2ecc71;
   text-decoration: none;
   color: black;
 }
 
 .politicsnews {
-  background-color: #f39c12;
   text-decoration: none;
   color: black;
 }
+
 
 .politicsspecial {
   text-decoration: none;
@@ -679,7 +685,13 @@ footer p {
 .js--wp-4,
 .js--wp-5,
 .js--wp-7,
-.js--wp-8 {
+.js--wp-8,
+.js--wp-20,
+.js--wp-21,
+.js--wp-22,
+.js--wp-23,
+.js--wp-24,
+.js--wp-25 {
   opacity: 0;
 }
 
@@ -688,6 +700,12 @@ footer p {
 .js--wp-4.animated,
 .js--wp-5.animated,
 .js--wp-7.animated,
-.js--wp-8.animated {
+.js--wp-8.animated,
+.js--wp-20.animated,
+.js--wp-21.animated,
+.js--wp-22.animated,
+.js--wp-23.animated,
+.js--wp-24.animated,
+.js--wp-25.animated {
   opacity: 1;
 }
