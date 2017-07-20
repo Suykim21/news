@@ -54,4 +54,28 @@ $(document).ready(function() {
     offset: '35%'
   });
 
+  $('.js--wp-3').waypoint(function(direction) {
+    $('.js--wp-4').addClass('animated slideInLeft');
+  }, {
+    offset: '50%'
+  });
+
+  $('.js--wp-4').waypoint(function(direction) {
+    $('.js--wp-5').addClass('animated slideInRight');
+  }, {
+    offset: '50%'
+  });
+
+  $('.js--wp-6').waypoint(function(direction) {
+    $('.js--wp-7').addClass('animated slideInLeft');
+  }, {
+    offset: '70%'
+  });
+
+  $('.js--wp-6').waypoint(function(direction) {
+    $('.js--wp-8').addClass('animated slideInRight');
+  }, {
+    offset: '70%'
+  });
+
 });
