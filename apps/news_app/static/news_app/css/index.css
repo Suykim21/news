@@ -279,7 +279,8 @@ header {
 /* ----------------------------------------------- */
 
 .section-features {
-  padding-bottom: 20px;
+  margin-top: -50px;
+  padding-bottom: 40px;
 }
 
 .section-features h2 {
@@ -296,7 +297,7 @@ header {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('politics_par.jpg');
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 60vh;
   background-attachment: fixed;
   color: white;
 }
@@ -325,7 +326,7 @@ header {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sports_par.jpg');
   background-size: cover;
   background-position: center;
-  height: 65vh;
+  height: 60vh;
   background-attachment: fixed;
   color: white;
 }
@@ -337,7 +338,11 @@ header {
 }
 
 .sports {
-  height: 80vh;
+  padding: 0;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0;
+  background-color: #fff;
 }
 
 .sports img {
@@ -345,6 +350,64 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+
+.sport-hero {
+  display: grid;
+  grid-gap: 1px;
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.sport-hero > * {
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+  color: #fff;
+}
+
+.sportfeature {
+  background-position: bottom left;
+  color: #fff;
+}
+
+.sportphotos {
+  color: #fff;
+}
+
+.sportnews {
+  color: #fff;
+}
+
+.sportspecial {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.sportspecial h3,
+.sportamazing h3{
+  margin-top: auto;
+}
+
+.sportamazing {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.sportcta {
+  background-color: rgb(123,14,34);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
 
 
 /* --------------------------------------------*/
@@ -399,8 +462,8 @@ header {
 
 .text {
   visibility: hidden;
-  position: relative;
-  top: -125px;
+  position: absolute;
+  top: 80px;
   max-width: 225px;
   max-height: 175px;
   text-align: center;
@@ -416,7 +479,7 @@ header {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('form_img.jpg');
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 70vh;
   background-attachment: fixed;
   color: white;
 }
@@ -547,4 +610,3 @@ footer p {
 .js--wp-2.animated {
   opacity: 1;
 }
-
