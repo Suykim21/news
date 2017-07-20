@@ -87,28 +87,6 @@
     </section>
 
     <section class="politics">
-      <div class="col span-1-of-2 box">
-        <img src="{{images.0}}" alt="{{titles.0}}" style="width: 48vw; margin:auto;">
-        <p>{{titles.0}}</p>
-      </div>
-      <div class="">
-        <div class="col span-1-of-4 box">
-          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-          <p>{{titles.0}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-          <p>{{titles.0}}</p>         
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-          <p>{{titles.0}}</p>         
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-          <p>{{titles.0}}</p>         
-        </div>
-      </div>
     </section>
 
     <section class="sports_par">
@@ -116,38 +94,14 @@
     </section>
 
     <section class="sports">
-      <div class="row">
-        <div class ="col span-1-of-3">
-          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 40vw; margin:auto;">
-        </div>
-        <div class ="col span-1-of-3">
-          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw; margin:auto;">
-        </div>
-        <div class ="col span-1-of-3">
-          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-        </div>
-      </div>
-      <div class="row">
-        <div class ="col span-1-of-2">
-          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-        </div>
-        <div class ="col span-1-of-2">
-          <img src="{{images.0}}" alt="{{titles.0}}" style="width: 25vw;">
-        </div>
-      </div>
     </section>
 
     <section class="current_par">
       <h1 style="font-size: 300%">Current Events</h1>      
     </section>
 
+
     <section class="section-news js--section-news">
-      <div class="row">
-        <h2 style="padding-bottom: 0;">Current News</h2>
-        <i class="ion-minus-round icon-big" style="    display: block; margin: auto; width: 1%;"></i>
-      </div>
-
-
       <div class="js--wp-2">
         <div class="row ">
           <div class="col span-1-of-4 box">
@@ -198,42 +152,41 @@
     </section>
 
 
-          <section class="section-form js--subscription">
-            <i class="ion-paper-airplane icon-big" style=" display: block; margin: auto; width: 1%;"></i>
-            <div class="row">
-                <h2>Get updates straight to your inbox</h2>
-            </div>
-            <div class="row">
-                <form method="post" action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <a class="btn btn-full" href="#" style="margin-left: 170px;">Submit!</a>
-                        </div>
-                    </div>
-
-                </form>
-
-            </div>
-        </section>
+    <section class="section-form js--subscription">
+      <i class="ion-paper-airplane icon-big" style=" display: block; margin: auto; width: 1%;"></i>
+      <div class="row">
+          <h2>Get updates straight to your inbox</h2>
+      </div>
+      <div class="row">
+          <form method="post" action="/subscribe" class="contact-form" id="subform">
+              {% csrf_token %}
+              <div class="row">
+                  <div class="col span-1-of-3">
+                      <label for="name">Name</label>
+                  </div>
+                  <div class="col span-2-of-3">
+                      <input type="text" name="name" id="name" placeholder="Your name" required>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col span-1-of-3">
+                      <label for="email">Email</label>
+                  </div>
+                  <div class="col span-2-of-3">
+                      <input type="email" name="email" id="email" placeholder="Your email" required>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col span-1-of-3">
+                      <label>&nbsp;</label>
+                  </div>
+                  <div class="col span-2-of-3">
+                      <button type="submit" form="subform" value="Submit">Submit it!</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </section>
 
         <footer>
             <div class="row">

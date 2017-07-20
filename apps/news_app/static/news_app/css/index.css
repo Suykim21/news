@@ -266,11 +266,18 @@ header {
 
 .section-features {
   padding-bottom: 20px;
+  color: black;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(150deg, #013A6B 35%, white 35%);
 }
 
 .section-features h2 {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.section-features a {
+  color: black;
 }
 
 /* ----------------------------------------------- */
@@ -294,7 +301,8 @@ header {
 
 .politics {
   height: 80vh;
-  color: black;
+  background-color: #34ADFF;
+  background-image: -webkit-linear-gradient(150deg, #34ADFF 35%, #4CBFFF 35%);
 }
 
 .politcs img {
@@ -324,6 +332,8 @@ header {
 
 .sports {
   height: 80vh;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
 }
 
 .sports img {
@@ -354,8 +364,9 @@ header {
 
 .section-news {
   padding: 0;
+  background-color: #34ADFF;
+  background-image: -webkit-linear-gradient(30deg, #34ADFF 45%, #4CBFFF 45%);
 }
-
 
 .box {
   position: relative;
@@ -405,6 +416,18 @@ header {
   height: 80vh;
   background-attachment: fixed;
   color: white;
+}
+
+.section-form button {
+  background-color: rgb(26, 175, 238);
+  border-radius: 200px;
+  width: 130px;
+  height: 40px;
+  border: rgb(26, 175, 238);
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 .section-form h2 {
