@@ -161,7 +161,7 @@
   }
 }
 
-/* Sport section - 500*/
+/* Politics section - 500*/
 @media (min-width: 500px) {
   .politics-hero {
     grid-template-columns: 1fr 1fr;
@@ -186,7 +186,7 @@
   }
 }
 
-/*Sport section - 800*/
+/*Politics section - 800*/
 @media (min-width: 800px) {
    .politics-hero {
     grid-template-columns: 1fr 1fr 1fr;
