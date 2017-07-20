@@ -50,6 +50,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CACHE_MIDDLEWARE_ALIAS = 'articles'
+CACHE_MIDDLEWARE_SECONDS = (60*15)
+
 ROOT_URLCONF = 'news.urls'
 
 TEMPLATES = [
@@ -81,6 +84,12 @@ DATABASES = {
     }
 }
 
+CACHES = {
+  'default': {
+    'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+    'LOCATION': '/var/tmp/django_cache',
+  }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
