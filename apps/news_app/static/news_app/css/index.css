@@ -160,7 +160,7 @@ header {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('newsbackground.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 113vh;
   background-attachment: fixed;
 }
 
@@ -296,36 +296,6 @@ header {
 }
 
 /* ----------------------------------------------- */
-/* Politics */
-/* ----------------------------------------------- */
-
-.pol_par {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('politics_par.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  background-attachment: fixed;
-  color: white !important;
-  max-width: 100%;  
-}
-
-.pol_par h1 {
-  padding-left: 20vw;
-  line-height: 40vh;
-}
-
-.politics {
-  height: 80vh;
-  background-color: #013A6B;
-  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
-}
-
-.politcs img {
-  margin: 0;
-  padding: 0;
-}
-
-/* ----------------------------------------------- */
 /* Sports */
 /* ----------------------------------------------- */
 
@@ -334,38 +304,83 @@ header {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sports_par.jpg');
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 100%;
+  background-attachment: fixed;
+  color: white !important;
+  max-width: 100%;  
+}
+
+.sports {
+  height: 80vh;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+}
+
+
+/* ----------------------------------------------- */
+/* Politics */
+/* ----------------------------------------------- */
+
+.pol_par {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('politics_par.jpg');
+  background-size: cover;
+  background-position: center;
+  height:100%;
   background-attachment: fixed;
   color: white;
 }
 
-.sports_par h1 {
+.pol_par h1 {
+  padding-left: 20vw;
+  line-height: 40vh;
+}
+
+.politcs img {
+  margin: 0;
+  padding: 10px;
+}
+
+
+.politics_par h1 {
   float: right;
   padding-right: 20vw;
   line-height: 40vh;
 }
 
-.sports {
+.politics {
+  text-decoration: none;
   height: 100%;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
   padding: 0;
   width: 100%;
   max-width: 100%;
   margin: 0;
 }
 
-.sports img {
+.politics-hero h3 {
+  text-decoration: none;
+}
+
+.politicsfeature a {
+  text-decoration: none;
+}
+
+.politics img {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.sport-hero {
+.politics-hero {
+  text-decoration: none;
   display: grid;
   grid-gap: 1px;
   grid-auto-rows: minmax(150px, auto);
 }
 
-.sport-hero > * {
+.politics-hero > * {
+  text-decoration: none;
   padding: 10px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -373,49 +388,48 @@ header {
   color: #fff;
 }
 
-.sportfeature {
+.politicsfeature {
+  text-decoration: none;
   background-position: bottom left;
   color: #fff;
 }
 
-.sportphotos {
+.politicsphotos {
+  text-decoration: none;
   color: #fff;
 }
 
-.sportnews {
+.politicsnews {
+  text-decoration: none;
   color: #fff;
 }
 
-.sportspecial {
+.politicsspecial {
+  text-decoration: none;
   color: #fff;
   display: flex;
   flex-direction: column;
 }
 
-.sportspecial h3,
-.sportamazing h3{
+.politicsspecial h3,
+.politicsamazing h3{
   margin-top: auto;
 }
 
-.sportamazing {
+.politicsamazing {
+  text-decoration: none;
   color: #fff;
   display: flex;
   flex-direction: column;
 }
 
-.sportcta {
+.politicscta {
+  text-decoration: none;
   background-color: rgb(123,14,34);
   color: #fff;
   display: flex;
   flex-direction: column;
 }
-
-
-
-
-
-
-
 
 
 /* --------------------------------------------*/
@@ -439,8 +453,8 @@ header {
 
 .section-news {
   padding: 0;
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(30deg, #34ADFF 45%, #4CBFFF 45%);
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(150deg, #013A6B 65%, white 65%);
 }
 
 .box {
