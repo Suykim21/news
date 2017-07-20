@@ -1,19 +1,18 @@
-{% load static %}
 
 <!DOCTYPE html>
 <html>
 
 <head>
+  {% load static %}
+  <meta charset="utf-8">
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="{% static 'news_app/js/index.js' %}"></script>
   <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/normalize.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/grid.css' %}">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="{% static 'news_app/css/index.css'%}" type="text/css">
   <link rel="stylesheet" href="{% static 'news_app/css/queries.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,500,500i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'news_app/css/index.css'%}" type="text/css">
   <title>Flash News</title>
 </head>
 
@@ -124,37 +123,56 @@
   </section>
 
   <section class="sports">
-    <div class="row">
-      <h2 style="padding-bottom: 0;">On the green and off the field</h2>
-      <i class="ion-minus-round icon-big" style="display: block; margin: auto; width: 1%;"></i>
-      <p class="long-copy">
-        Breaking news sports news round the clock.
-      </p>
+    <div class="row js--wp-3">
+      <div class="js--wp-4">
+        <div class="col span-1-of-4 box">
+          <a href="{{urls.0}}" target="_blank"><h3>{{titles.0}}<br></h3></a>
+          <p>{{pub.0}}</p>
+          <p>{{descriptions.0}}</p>
+        </div>
+        <div class="col span-1-of-4 box" style="padding-right: 10px !important">
+          <a href="{{urls.1}}" target="_blank"><h3>{{titles.1}}<br></h3></a>
+          <p>{{pub.1}}</p>
+          <p>{{descriptions.1}}</p>
+        </div>
+      </div>
+      <div class="js--wp-5">
+        <div class="col span-1-of-4 box">
+          <a href="{{urls.2}}" target="_blank"><h3>{{titles.2}}<br></h3></a>
+          <p>{{pub.2}}</p>
+          <p>{{descriptions.2}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <a href="{{urls.3}}" target="_blank"><h3>{{titles.3}}<br></h3></a>
+          <p>{{ pub.3}}</p>
+          <p>{{descriptions.3}}</p>
+        </div>
+      </div>
     </div>
-    <div class="row js--wp-1">
-      <div class="col span-1-of-4 box">
-        <i class="ion-earth icon-big"></i>
-        <a href="{{urls.0}}" target="_blank"><h3>{{titles.0}}<br></h3></a>
-        <p>{{pub.0}}</p>
-        <p>{{descriptions.0}}</p>
+    <div class="row js--wp-6">
+      <div class="js--wp-7">
+        <div class="col span-1-of-4 box">
+          <a href="{{urls.0}}" target="_blank"><h3>{{titles.0}}<br></h3></a>
+          <p>{{pub.0}}</p>
+          <p>{{descriptions.0}}</p>
+        </div>
+        <div class="col span-1-of-4 box" style="padding-right: 10px !important">
+          <a href="{{urls.1}}" target="_blank"><h3>{{titles.1}}<br></h3></a>
+          <p>{{pub.1}}</p>
+          <p>{{descriptions.1}}</p>
+        </div>
       </div>
-      <div class="col span-1-of-4 box">
-        <i class="ion-ios-camera icon-big"></i>
-        <a href="{{urls.1}}" target="_blank"><h3>{{titles.1}}<br></h3></a>
-        <p>{{pub.1}}</p>
-        <p>{{descriptions.1}}</p>
-      </div>
-      <div class="col span-1-of-4 box">
-        <i class="ion-ios-monitor icon-big"></i>
-        <a href="{{urls.2}}" target="_blank"><h3>{{titles.2}}<br></h3></a>
-        <p>{{pub.2}}</p>
-        <p>{{descriptions.2}}</p>
-      </div>
-      <div class="col span-1-of-4 box">
-        <i class="ion-ios-americanfootball icon-big"></i>
-        <a href="{{urls.3}}" target="_blank"><h3>{{titles.3}}<br></h3></a>
-        <p>{{ pub.3}}</p>
-        <p>{{descriptions.3}}</p>
+      <div class="js--wp-8">
+        <div class="col span-1-of-4 box">
+          <a href="{{urls.2}}" target="_blank"><h3>{{titles.2}}<br></h3></a>
+          <p>{{pub.2}}</p>
+          <p>{{descriptions.2}}</p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <a href="{{urls.3}}" target="_blank"><h3>{{titles.3}}<br></h3></a>
+          <p>{{ pub.3}}</p>
+          <p>{{descriptions.3}}</p>
+        </div>
       </div>
     </div>
   </section>
