@@ -88,7 +88,7 @@ h3 {
     display: block;
     margin: auto;
     width: 30%;
-    color: rgb(75, 147, 177);
+    color: #013A6B;
     margin-bottom: 10px;
 }
 
@@ -281,9 +281,8 @@ header {
 .section-features {
   padding-bottom: 20px;
   color: black;
-  background-color: #013A6B;
-  background-image: -webkit-linear-gradient(150deg, #013A6B 35%, white 35%);
-  margin-top: -50px;
+  background-color: rgb(75, 147, 177);
+  background-image: -webkit-linear-gradient(150deg, rgb(75, 147, 177) 35%, white 35%);
   padding-bottom: 40px;
 }
 
@@ -297,22 +296,24 @@ header {
 }
 
 /* ----------------------------------------------- */
-/* Politics */
+/* Sports */
 /* ----------------------------------------------- */
+
 .sports_par {
   padding-top: 60px;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sports_par.jpg');
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 100%;
   background-attachment: fixed;
-  color: white;
+  color: white !important;
+  max-width: 100%;  
 }
 
 .sports {
   height: 80vh;
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(150deg, #34ADFF 35%, #4CBFFF 35%);
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
 }
 
 
@@ -431,13 +432,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
 /* --------------------------------------------*/
 /*NEWS PHOTOS*/
 /*---------------------------------------------*/
@@ -459,8 +453,8 @@ header {
 
 .section-news {
   padding: 0;
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(30deg, #34ADFF 45%, #4CBFFF 45%);
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(150deg, #013A6B 65%, white 65%);
 }
 
 .box {
