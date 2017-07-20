@@ -291,6 +291,31 @@ header {
 }
 
 /* ----------------------------------------------- */
+/* Sports */
+/* ----------------------------------------------- */
+
+.sports_par {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sports_par.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  background-attachment: fixed;
+  color: white !important;
+  max-width: 100%;
+}
+
+.sports_par {
+  padding-left: 20vw;
+  line-height: 40vh;
+}
+.sports {
+  height: 80vh;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+}
+
+
+/* ----------------------------------------------- */
 /* Politics */
 /* ----------------------------------------------- */
 
@@ -304,17 +329,15 @@ header {
 }
 
 .pol_par h1 {
+  text-decoration: none;
   padding-left: 20vw;
   line-height: 40vh;
 }
 
-.politcs img {
-  margin: 0;
-  padding: 10px;
-}
 
 
 .politics_par h1 {
+  text-decoration: none;
   float: right;
   padding-right: 20vw;
   line-height: 40vh;
@@ -323,8 +346,6 @@ header {
 .politics {
   text-decoration: none;
   height: 100%;
-  background-color: #013A6B;
-  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
   padding: 0;
   width: 100%;
   max-width: 100%;
@@ -340,6 +361,8 @@ header {
 }
 
 .politics img {
+  border-radius: 70px;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -353,53 +376,55 @@ header {
 }
 
 .politics-hero > * {
+  background-image: -webkit-linear-gradient(40deg, rgb(75, 147, 177) 55%, #e74c3c 55%);
   text-decoration: none;
   padding: 10px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #333;
-  color: #fff;
+  color: black;
 }
 
 .politicsfeature {
   text-decoration: none;
   background-position: bottom left;
-  color: #fff;
+  color: black;
 }
 
 .politicsphotos {
+  background-color: #2ecc71;
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 
 .politicsnews {
+  background-color: #f39c12;
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 
 .politicsspecial {
   text-decoration: none;
-  color: #fff;
+  color: black;
   display: flex;
   flex-direction: column;
 }
 
 .politicsspecial h3,
 .politicsamazing h3{
+  text-decoration: none;
   margin-top: auto;
 }
 
 .politicsamazing {
   text-decoration: none;
-  color: #fff;
+  color: black;
   display: flex;
   flex-direction: column;
 }
 
 .politicscta {
   text-decoration: none;
-  background-color: rgb(123,14,34);
-  color: #fff;
+  color: black;
   display: flex;
   flex-direction: column;
 }
@@ -415,7 +440,7 @@ header {
   height: 100%;
   background-attachment: fixed;
   color: white !important;
-  max-width: 100%;  
+  max-width: 100%;
 }
 
 .sports {
@@ -650,7 +675,7 @@ footer p {
 /* ----------------------------------------------- */
 
 .js--wp-1,
-.js--wp-2, 
+.js--wp-2,
 .js--wp-4,
 .js--wp-5,
 .js--wp-7,
