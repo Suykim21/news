@@ -40,6 +40,13 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  // click tech  button
+  $('.js--scroll-to-tech').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.js--tech').offset().top
+    }, 1000);
+  });
+
 
   //   // Animations on scroll
   $('.js--wp-1').waypoint(function(direction) {
@@ -92,6 +99,8 @@ $(document).ready(function() {
 
   $('.js--wp-20').waypoint(function(direction) {
     $('.js--wp-22').addClass('animated fadeInUp');
+  }, {
+    offset: '5%'
   });
 
   $('.js--wp-20').waypoint(function(direction) {
@@ -112,6 +121,55 @@ $(document).ready(function() {
     offset: '50%'
   });
 
+  //Tech section Animations
+
+  $('.js--wp-29').waypoint(function(direction) {
+    $('.js--wp-37').addClass('animated zoomIn');
+  }, {
+    offset: '70%'
+  });
+
+  $('.js--wp-30').waypoint(function(direction) {
+    $('.js--wp-31').addClass('animated zoomIn');
+  }, {
+    offset: '50%'
+  });
+
+  $('.js--wp-31').waypoint(function(direction) {
+    $('.js--wp-34').addClass('animated zoomIn');
+  }, {
+    offset: '60%'
+  });
+
+  $('.js--wp-31').waypoint(function(direction) {
+    $('.js--wp-36').addClass('animated zoomIn');
+  }, {
+    offset: '10%'
+  });
+
+  $('.js--wp-34').waypoint(function(direction) {
+    $('.js--wp-33').addClass('animated zoomIn');
+  }, {
+    offset: '40%'
+  });
+
+  $('.js--wp-33').waypoint(function(direction) {
+    $('.js--wp-30').addClass('animated zoomIn');
+  }, {
+    offset: '30%'
+  });
+
+  $('.js--wp-29').waypoint(function(direction) {
+    $('.js--wp-35').addClass('animated zoomIn');
+  }, {
+    offset: '40%'
+  });
+
+  $('.js--wp-33').waypoint(function(direction) {
+    $('.js--wp-32').addClass('animated zoomIn');
+  }, {
+    offset: '50%'
+  });
 
   /* Mobile navigation */
   $('.js--nav-icon').click(function() {

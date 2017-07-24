@@ -147,6 +147,17 @@
   .works-step:last-of-type {
     margin-bottom: 20px;
   }
+
+  .sports {
+    width: 100%;
+    height: auto;
+  }
+
+  .tech-photo {
+    display: block;
+    float: none;
+    width: 100%;
+  }
 }
 
 
@@ -209,5 +220,14 @@
   .politicscta {
     grid-column: 3;
     grid-row: 3 / 6;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .tech-showcase li {
+    display: block;
+    float: left;
+    width: 50%;
   }
 }

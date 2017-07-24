@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 html,
 body {
   background-color: #fff;
@@ -54,6 +58,7 @@ h1 {
 }
 
 h2 {
+    padding-top: 40px;
     font-size: 180%;
     word-spacing: 2px;
     text-align: center;
@@ -320,7 +325,7 @@ header {
 /* ----------------------------------------------- */
 
 .pol_par {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('politics_par.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('politics_par.jpg');
   background-size: cover;
   background-position: center;
   height:100%;
@@ -345,8 +350,7 @@ header {
 
 .politics {
   padding: 0;
-  background-color: #013A6B;
-  background-image: -webkit-linear-gradient(45deg, #013A6B 65%, rgb(75, 147, 177) 65%);
+  background-color: #ececec;
   text-decoration: none;
   height: 100%;
   padding: 0;
@@ -355,9 +359,6 @@ header {
   margin: 0;
 }
 
-.politics-hero img {
-  border: solid 3px #013A6B;
-}
 
 .politics-hero h3 {
   text-decoration: none;
@@ -368,7 +369,6 @@ header {
 }
 
 .politics img {
-  border-radius: 10px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -395,9 +395,18 @@ header {
   text-decoration: none;
   background-position: bottom left;
   color: black;
+  margin-top: 10px;
+}
+
+.politicsfeature-2 {
+  color: black;
+  padding: 10px;
+  border: solid 3px white;
+  background-color: white;
 }
 
 .politicsphotos {
+  margin-left: 10px;
   text-decoration: none;
   color: black;
 }
@@ -405,6 +414,11 @@ header {
 .politicsnews {
   text-decoration: none;
   color: black;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: solid 3px white;
+  background-color: white;
 }
 
 
@@ -413,11 +427,18 @@ header {
   color: black;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: solid 3px white;
+  background-color: white;
 }
 
-.politicsspecial h3,
+.politicsspecial h3 {
+  margin-top: 35px;
+}
+
 .politicsamazing h3{
-  text-decoration: none;
   margin-top: auto;
 }
 
@@ -426,6 +447,8 @@ header {
   color: black;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .politicscta {
@@ -433,7 +456,146 @@ header {
   color: black;
   display: flex;
   flex-direction: column;
+  margin: 10px;
+  border: solid 3px white;
+  background-color: white;
 }
+
+/* ----------------------------------------------- */
+/* Tech */
+/* ----------------------------------------------- */
+
+.tech_par {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('tech.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  background-attachment: fixed;
+  color: white;
+}
+
+.tech_par h1 {
+  text-decoration: none;
+  padding-left: 20vw;
+  line-height: 40vh;
+  padding-bottom: 20px;
+}
+
+.tech {
+  padding: 0;
+}
+
+.tech-showcase {
+  list-style: none;
+  width: 100%;
+  display: block
+}
+
+.tech-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.tech-showcase img {
+	display: block;
+	height: auto;
+  width: 100%;
+}
+
+.tech-showcase figure {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-showcase figcaption {
+	color: white;
+	display: table;
+  top: 100%;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+  margin: 0 auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}
+
+.tech-showcase li:hover figcaption {
+	opacity: 1;
+}
+
+.tech-showcase img {
+	display: block;
+	height: auto;
+  opacity: 0.7;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	max-width: 100%;
+  transition: transform 0.5s, opacity: 0.5s;
+}
+
+.tech-showcase li:hover img {
+  opacity: 1;
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.tech-showcase figcaption p {
+	display: table-cell;
+  margin: auto;
+	font-size: 1em;
+	position: relative;
+	width: 100%;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+  text-align: center;
+}
+
+.tech-showcase li:hover figcaption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+
+
+/*.thumb-container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.thumb-unit {
+  display: block;
+  width: 25%;
+  height: 150px;
+  background: pink;
+  float: left;
+  background-image: url
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.thumb-unit img {*/
+/*}*/
+
 
 /* ----------------------------------------------- */
 /* Sports */
@@ -691,7 +853,15 @@ footer p {
 .js--wp-22,
 .js--wp-23,
 .js--wp-24,
-.js--wp-25 {
+.js--wp-25,
+.js--wp-30,
+.js--wp-31,
+.js--wp-32,
+.js--wp-33,
+.js--wp-34,
+.js--wp-35,
+.js--wp-36,
+.js--wp-37 {
   opacity: 0;
 }
 
@@ -706,6 +876,15 @@ footer p {
 .js--wp-22.animated,
 .js--wp-23.animated,
 .js--wp-24.animated,
-.js--wp-25.animated {
+.js--wp-25.animated,
+.js--wp-29.animated,
+.js--wp-30.animated,
+.js--wp-31.animated,
+.js--wp-32.animated,
+.js--wp-33.animated,
+.js--wp-34.animated,
+.js--wp-35.animated,
+.js--wp-36.animated,
+.js--wp-37.animated {
   opacity: 1;
 }
