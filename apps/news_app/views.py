@@ -18,10 +18,11 @@ def index(request):
   responseH = requests.get('https://newsapi.org/v1/articles?source=the-huffington-post&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
   dataH = responseH.json()
   Huff = dataH[u'articles']
-  random.shuffle(Huff)  
+  random.shuffle(Huff)
   #Delete below
   a = len(dataH)
   b = random.randint(0,a)
+  print (dataH)
   images.append(dataH[u'articles'][b][u'urlToImage'])
   titles.append(dataH[u'articles'][b][u'title'])
   descriptions.append(dataH[u'articles'][b][u'description'])
@@ -32,7 +33,7 @@ def index(request):
   responseE = requests.get('https://newsapi.org/v1/articles?source=entertainment-weekly&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
   dataE = responseE.json()
   EW = dataE[u'articles']
-  random.shuffle(EW) 
+  random.shuffle(EW)
   #Delete below
   a = len(dataE)
   b = random.randint(0,a)
@@ -40,7 +41,7 @@ def index(request):
   titles.append(dataE[u'articles'][b][u'title'])
   descriptions.append(dataE[u'articles'][b][u'description'])
   urls.append(dataE[u'articles'][b][u'url'])
-  pub.append(dataE[u'articles'][b][u'publishedAt'].split('T')[0]) 
+  pub.append(dataE[u'articles'][b][u'publishedAt'].split('T')[0])
 
   #Tech Crunch API call
   responseT = requests.get('https://newsapi.org/v1/articles?source=techcrunch&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')
