@@ -5,13 +5,14 @@
 <head>
   {% load static %}
   <meta charset="utf-8">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/normalize.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/grid.css' %}">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="{% static 'news_app/css/queries.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,500,500i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="{% static 'news_app/css/index.css'%}" type="text/css">
-  <link rel="stylesheet" href="{% static 'news_app/css/queries.css' %}">
   <title>Flash News</title>
 </head>
 
@@ -72,6 +73,36 @@
         <p>{{Crunch.0.description}}</p>
       </div>
     </div>
+  
+  <section class="section-entertainment">
+    <ul class="enterainment-showcase">
+      <figure>
+        <img src="{{Huff.1.urlToImage}}" alt="entertainment image 1">
+      </figure>
+      <figure>
+        <img src="{{Huff.2.urlToImage}}" alt="entertainment image 2">
+      </figure>
+      <figure>
+        <img src="{{Huff.3.urlToImage}}" alt="entertainment image 3">
+      </figure>
+      <figure>
+        <img src="{{Huff.4.urlToImage}}" alt="entertainment image 4">
+      </figure>
+    </ul>
+    <ul class="enterainment-showcase">
+      <figure>
+        <img src="{{Brietbar.1.urlToImage}}" alt="entertainment image 5">
+      </figure>
+      <figure>
+        <img src="{{Brietbar.2.urlToImage}}" alt="entertainment image 6">
+      </figure>
+      <figure>
+        <img src="{{Brietbar.3.urlToImage}}" alt="entertainment image 7">
+      </figure>
+      <figure>
+        <img src="{{Brietbar.4.urlToImage}}" alt="entertainment image 8">
+      </figure>
+    </ul>
   </section>
 
 
