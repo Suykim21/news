@@ -309,7 +309,7 @@ header {
 /* Sports */
 /* ----------------------------------------------- */
 
-.sports_par {
+/*.sports_par {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sports_par.jpg');
   background-size: cover;
   background-position: center;
@@ -327,6 +327,49 @@ header {
   height: 80vh;
   background-color: #013A6B;
   background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+}*/
+
+.sports img {
+  width: 95%
+}
+
+/* ----------------------------------------------- */
+/* Sports */
+/* ----------------------------------------------- */
+
+.sports_par {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sports_par.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-attachment: fixed;
+  color: white !important;
+  max-width: 100%;
+}
+
+.sports {
+  color: white;
+  height: 80vh;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+}
+
+.sports a {
+  color: white;
+}
+
+.sports .icon-big {
+    font-size: 350%;
+    display: block;
+    margin: auto;
+    width: 30%;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.sports .row .box {
+  padding: 0 10px !important;
+  border-radius: 20px;
 }
 
 
@@ -606,46 +649,6 @@ header {
 .thumb-unit img {*/
 /*}*/
 
-
-/* ----------------------------------------------- */
-/* Sports */
-/* ----------------------------------------------- */
-
-.sports_par {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sports_par.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  background-attachment: fixed;
-  color: white !important;
-  max-width: 100%;
-}
-
-.sports {
-  color: white;
-  height: 100vh;
-  background-color: #013A6B;
-  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
-}
-
-.sports a {
-  color: white;
-}
-
-.sports .icon-big {
-    font-size: 350%;
-    display: block;
-    margin: auto;
-    width: 30%;
-    color: orange;
-    margin-bottom: 10px;
-}
-
-.sports .row .box {
-  padding: 0 10px !important;
-  border-radius: 20px;
-  border: 2px solid orange;
-}
 
 
 /* --------------------------------------------*/
