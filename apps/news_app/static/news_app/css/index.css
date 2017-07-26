@@ -466,7 +466,7 @@ header {
 /* ----------------------------------------------- */
 
 .tech_par {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('tech.jpg');
+  background: url('tech.jpg');
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -475,11 +475,11 @@ header {
 }
 
 .tech_par h1 {
-  text-decoration: none;
-  padding-left: 20vw;
-  line-height: 40vh;
-  padding-bottom: 20px;
+  line-height: 5;
+  text-align: center;
+  width: 30%;
 }
+
 
 .tech {
   padding: 0;
