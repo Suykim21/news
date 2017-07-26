@@ -9,15 +9,7 @@ import requests
 from datetime import datetime
 import random
 
-
-
 def index(request):
-  print "*"*50
-  images = []
-  titles = []
-  descriptions = []
-  urls = []
-  pub = []
 
   # Huffington Post API call
   responseH = requests.get('https://newsapi.org/v1/articles?source=the-huffington-post&sortBy=top&apiKey=3b606a8547b24dfdbf43e72388b6f539')

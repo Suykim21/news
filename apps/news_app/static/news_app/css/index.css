@@ -313,7 +313,7 @@ header {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sports_par.jpg');
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 100%;
   background-attachment: fixed;
   color: white !important;
   max-width: 100%;
@@ -323,8 +323,12 @@ header {
   padding-left: 20vw;
   line-height: 40vh;
 }
+
+.sports a {
+  color: white;
+}
 .sports {
-  height: 80vh;
+  height: 100vh;
   background-color: #013A6B;
   background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
 }*/
@@ -372,6 +376,9 @@ header {
   border-radius: 20px;
 }
 
+.sports img {
+  width: 100%;
+}
 
 /* ----------------------------------------------- */
 /* Politics */
@@ -648,7 +655,6 @@ header {
 
 .thumb-unit img {*/
 /*}*/
-
 
 
 /* --------------------------------------------*/
