@@ -1,9 +1,14 @@
 from __future__ import unicode_literals
 from django.shortcuts import render, HttpResponse, redirect
+from django.conf import settings
+from django.contrib import messages
+from django.core.mail import send_mail
+from django.core import serializers
 from .models import User
 import requests
 from datetime import datetime
 import random
+
 
 
 def index(request):
@@ -75,5 +80,30 @@ def index(request):
   return render(request, 'news_app/index.html', context)
 
 def subscribe(request):
-  User.objects.create(name=request.POST['name'], email=request.POST['email'])
-  return redirect('home')
+    context = {
+        'name': request.POST['name'],
+        'email': request.POST['email']
+    }
+
+    sub_results = User.objects.sub(context)
+
+    if sub_results['new'] != None:
+      # send_mail(subject, message, from_email, to_list, fail_silently=True)
+      user = sub_results['new']
+      print "*"*50
+      print user
+      subject = "Thank you for subscribing to Flash News!"
+      message = "Welcome to Flash News! we appreciate your subscription!"
+      from_email = 'flashnews@kk.com'
+      to_list = [user.email]
+      print user.email
+      send_mail(subject, message, from_email, to_list, fail_silently=False)
+      messages.add_message(request, messages.SUCCESS, 'Subscribed Successfully. Thank you!')
+      return redirect('home')
+    else:
+      for errors in sub_results['error_list']:
+        messages.add_message(request, messages.ERROR, errors)
+      return redirect('home')
+
+  # User.objects.create(name=request.POST['name'], email=request.POST['email'])
+  # return redirect('home')
