@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+  /* AJAX Submission Form */
+  // $('#create_user_ajax_form').submit(function(e){
+  //   // prevents browser from refreshing the page.
+  //   e.preventDefault()
+  //   $.ajax({
+  //     // pointing to action="/subscribe"
+  //     url: $(this).attr('action'),
+  //     method: 'post',
+  //     // pointing to the form
+  //     data: $(this).serialize(),
+  //     success: function(serverResponse) {
+  //       alert(serverResponse)
+  //     }
+  //   })
+  // });
 
   /* For the sticky navigation */
   $('.js--section-features').waypoint(function(direction) {
