@@ -4,13 +4,14 @@
 <head>
   {% load static %}
   <meta charset="utf-8">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/normalize.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'news_app/css/grid.css' %}">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="{% static 'news_app/css/queries.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,500,500i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="{% static 'news_app/css/index.css'%}" type="text/css">
-  <link rel="stylesheet" href="{% static 'news_app/css/queries.css' %}">
   <title>Flash News</title>
 </head>
 
@@ -71,8 +72,7 @@
         <p>{{Crunch.0.description}}</p>
       </div>
     </div>
-  </section>
-
+  
 
   <section class="pol_par">
     <h1 style="font-size: 300%">Politics</h1>
@@ -82,44 +82,44 @@
     <!-- <div class="wrapper"> -->
     <div class="politics-hero">
       <div class="politicsfeature js--wp-20">
-        <h3>{{Briet.0.title}}</h3>
-        <p>{{Briet.0.publishedAt}}</p>
-        <p>{{Briet.0.description}}...<a href="{{Briet.0.url}}" target="_blank">read more</a></p>
-        <img src="{{Briet.0.urlToImage}}" alt="asdfas" style="width: 100%;">
+        <h3>{{Huff.1.title}}</h3>
+        <p>{{Huff.1.publishedAt}}</p>
+        <p>{{Huff.1.description}}...<a href="{{Huff.1.url}}" target="_blank">read more</a></p>
+        <img src="{{Huff.1.urlToImage}}" alt="asdfas" style="width: 100%;">
         <br>
         <div class="politicsfeature-2 js--wp-22">
-          <h3>{{Huff.1.title}}</h3>
-          <p>{{Huff.1.publishedAt}}</p>
-          <p>{{Huff.1.description}}...<a href="{{Huff.1.url}}" target="_blank">read more</a></p>
-          <img src="{{Huff.1.urlToImage}}" alt="asdfas" style="width: 100%;">
+          <h3>{{Briet.0.title}}</h3>
+          <p>{{Briet.0.publishedAt}}</p>
+          <p>{{Briet.0.description}}...<a href="{{Briet.0.url}}" target="_blank">read more</a></p>
+          <img src="{{Briet.0.urlToImage}}" alt="asdfas" style="width: 100%;">
         </div>
       </div>
       <div class="politicsspecial js--wp-21">
-        <h3 style="margin-top:35px;">{{Briet.1.title}}</h3>
-        <p>{{Briet.1.publishedAt}}</p>
-        <p>{{Briet.1.description}}...<a href="{{Briet.1.url}}" target="_blank">read more</a></p>
-        <img src="{{Briet.1.urlToImage}}" alt="asdfas" style="width: 100%;">
-      </div>
-      <div class="politicsamazing js--wp-22">
-        <h3 style="margin-top: 0;">{{Huff.2.title}}</h3>
+        <h3 style="margin-top:35px;">{{Huff.2.title}}</h3>
         <p>{{Huff.2.publishedAt}}</p>
         <p>{{Huff.2.description}}...<a href="{{Huff.2.url}}" target="_blank">read more</a></p>
+        <img src="{{Huff.2.urlToImage}}" alt="asdfas" style="width: 100%;">
+      </div>
+      <div class="politicsamazing js--wp-22">
+        <h3 style="margin-top: 0;">{{Briet.1.title}}</h3>
+        <p>{{Briet.1.publishedAt}}</p>
+        <p>{{Briet.1.description}}...<a href="{{Briet.1.url}}" target="_blank">read more</a></p>
       </div>
       <div class="politicsnews js--wp-23">
-        <h3>{{Briet.2.title}}</h3>
-        <p>{{Briet.2.publishedAt}}</p>
-        <p>{{Briet.2.description}}...<a href="{{Briet.2.url}}" target="_blank">read more</a></p>
-      </div>
-      <div class="politicsphotos js--wp-24">
         <h3>{{Huff.3.title}}</h3>
         <p>{{Huff.3.publishedAt}}</p>
         <p>{{Huff.3.description}}...<a href="{{Huff.3.url}}" target="_blank">read more</a></p>
       </div>
+      <div class="politicsphotos js--wp-24">
+        <h3>{{Huff.4.title}}</h3>
+        <p>{{Huff.4.publishedAt}}</p>
+        <p>{{Huff.4.description}}...<a href="{{Huff.4.url}}" target="_blank">read more</a></p>
+      </div>
       <div class="politicscta js--wp-25">
-        <h3>{{Briet.3.title}}</h3>
-        <p>{{Briet.3.publishedAt}}</p>
-        <p>{{Briet.3.description}}...<a href="{{Briet.3.url}}" target="_blank">read more</a></p>
-        <img src="{{Briet.3.urlToImage}}" alt="asdfas" style="width: 100%;">
+        <h3>{{Briet.2.title}}</h3>
+        <p>{{Briet.2.publishedAt}}</p>
+        <p>{{Briet.2.description}}...<a href="{{Briet.2.url}}" target="_blank">read more</a></p>
+        <img src="{{Briet.2.urlToImage}}" alt="asdfas" style="width: 100%;">
       </div>
     </div>
     <!-- </div> -->
@@ -180,13 +180,12 @@
     <h1 style="font-size: 300%">Tech</h1>
   </section>
 
-
   <section class="tech js--tech js--wp-29">
     <ul class="tech-showcase clearfix">
       <li>
-        <a href="{{Crunch.1.url}}" target="_blank">
+        <a href="{{Crunch.1.url}}" 
           <figure class="tech-photo js--wp-30">
-            <img src="{{Crunch.1.urlToImage}}">
+            <img src="{{Crunch.1.urlToImage}}" alt="{{Crunch.1.title}}">
             <figcaption>
               <p>{{Crunch.1.title}}</p>
             </figcaption>
@@ -196,7 +195,7 @@
       <li>
         <a href="{{Recode.0.url}}" target="_blank">
           <figure class="tech-photo js--wp-31">
-            <img src="{{Recode.0.urlToImage}}">
+            <img src="{{Recode.0.urlToImage}}" alt="{{Recode.0.title}}">
             <figcaption>
               <p>{{Recode.0.title}}</p>
             </figcaption>
@@ -206,7 +205,7 @@
       <li>
         <a href="{{Crunch.2.url}}" target="_blank">
           <figure class="tech-photo js--wp-32">
-            <img src="{{Crunch.2.urlToImage}}">
+            <img src="{{Crunch.2.urlToImage}}" alt="{{Crunch.2.title}}">
             <figcaption>
               <p>{{Crunch.2.title}}</p>
             </figcaption>
@@ -216,7 +215,7 @@
       <li>
         <a href="{{Recode.1.url}}" target="_blank">
           <figure class="tech-photo js--wp-33">
-            <img src="{{Recode.1.urlToImage}}">
+            <img src="{{Recode.1.urlToImage}}" alt="{{Recode.1.title}}">
             <figcaption>
               <p>{{Recode.1.title}}</p>
             </figcaption>
@@ -228,7 +227,7 @@
       <li>
         <a href="{{Crunch.3.url}}" target="_blank">
           <figure class="tech-photo js--wp-34">
-            <img src="{{Crunch.3.urlToImage}}">
+            <img src="{{Crunch.3.urlToImage}}" alt="{{Crunch.3.title}}">
             <figcaption>
               <p>{{Crunch.3.title}}</p>
             </figcaption>
@@ -238,7 +237,7 @@
       <li>
         <a href="{{Recode.2.url}}" target="_blank">
           <figure class="tech-photo js--wp-35">
-            <img src="{{Recode.2.urlToImage}}" >
+            <img src="{{Recode.2.urlToImage}}" alt="{{Recode.2.title}}">
             <figcaption>
               <p>{{Recode.2.title}}</p>
             </figcaption>
@@ -246,11 +245,11 @@
         </a>
       </li>
       <li>
-        <a href="{{Recode.4.url}}" target="_blank">
+        <a href="{{Crunch.4.url}}" target="_blank">
           <figure class="tech-photo js--wp-36">
-            <img src="{{Recode.4.urlToImage}}">
+            <img src="{{Crunch.4.urlToImage}}" alt="{{Crunch.4.title}}">
             <figcaption>
-              <p>{{Recode.4.title}}</p>
+              <p>{{Crunch.4.title}}</p>
             </figcaption>
           </figure>
         </a>
@@ -258,7 +257,7 @@
       <li>
         <a href="{{Recode.3.url}}" target="_blank">
           <figure class="tech-photo js--wp-37">
-            <img src="{{Recode.3.urlToImage}}">
+            <img src="{{Recode.3.urlToImage}}" alt="{{Recode.3.title}}">
             <figcaption>
               <p>{{Recode.3.title}}</p>
             </figcaption>
@@ -267,65 +266,6 @@
       </li>
     </ul>
   </section>
-
-
-
-
-  <!--<section class="current_par">
-    <h1 style="font-size: 300%">Current Events</h1>
-  </section>-->
-  <!--
-  <section class="section-news js--section-news">
-    <div class="row">
-      <h2 style="padding-bottom: 0;">Our Partners</h2>
-      <i class="ion-minus-round icon-big" style="    display: block; margin: auto; width: 1%;"></i>
-    </div>
-    <div class="js--wp-2">
-      <div class="row ">
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/hufflogo.jpg'%}" alt="huffpost" class="logos">
-          <a href="{{urls.0}}" target="_blank"><img src="{{images.0}}" alt="{{titles.0}}" height="180" width="250"><br></h3></a>
-          <p class="text">{{titles.0}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/tclogo.jpg'%}" alt="techcrunch" class="logos">
-          <a href="{{urls.2}}" target="_blank" class="links"><img src="{{images.2}}" alt="{{titles.2}}" height="180" width="250"><br></h3></a>
-          <p class="text">{{titles.2}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/foxsports.jpg'%}" alt="foxsports" class="logos">
-          <a href="{{urls.3}}" target="_blank" class="links"><img src="{{images.3}}" alt="{{titles.3}}" height="180" width="250"><br></h3></a>
-          <p class="text">{{titles.3}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/ew.jpg'%}" alt="techcrunch" class="logos">
-          <a href="{{urls.1}}" target="_blank" class="links"><img src="{{images.1}}" alt="{{titles.1}}" height="180" width="250"><br></h3></a>
-          <p class="text">{{titles.1}}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/britbart.jpg'%}" alt="brietbart" class="logos">
-          <a href="{{urls.4}}" target="_blank"><img src="{{images.4}}" alt="{{titles.4}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.4}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/recodelogo.jpg'%}" alt="techcrunch" class="logos">
-          <a href="{{urls.6}}" target="_blank" class="links"><img src="{{images.6}}" alt="{{titles.6}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.6}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/sportbible.jpg'%}" alt="foxsports" class="logos">
-          <a href="{{urls.7}}" target="_blank" class="links"><img src="{{images.7}}" alt="{{titles.7}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.7}}</p>
-        </div>
-        <div class="col span-1-of-4 box">
-          <img src="{% static 'news_app/img/mtv.png'%}" alt="mtv" class="logos">
-          <a href="{{urls.5}}" target="_blank" class="links"><img src="{{images.5}}" alt="{{titles.5}}" height="180" width="236"><br></h3></a>
-          <p class="text">{{titles.5}}</p>
-        </div>
-      </div>
-  </section> -->
 
 
   <section class="section-form js--subscription">
@@ -392,5 +332,4 @@
   <script src="{% static 'news_app/js/jquery.waypoints.min.js' %}"></script>
   <script src="{% static 'news_app/js/index.js' %}"></script>
 </body>
-
 </html>
