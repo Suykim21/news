@@ -192,7 +192,7 @@
   <section class="tech js--tech js--wp-29">
     <ul class="tech-showcase clearfix">
       <li>
-        <a href="{{urls.2}}">
+        <a href="{{urls.2}}" target="_blank">
           <figure class="tech-photo js--wp-30">
             <img src="{{images.2}}" alt="{{titles.2}}">
             <figcaption>
@@ -202,7 +202,7 @@
         </a>
       </li>
       <li>
-        <a href="{{urls.2}}">
+        <a href="{{urls.2}}" target="_blank">
           <figure class="tech-photo js--wp-31">
             <img src="{{images.2}}" alt="{{titles.2}}">
             <figcaption>
@@ -212,7 +212,7 @@
         </a>
       </li>
       <li>
-        <a href="{{urls.2}}">
+        <a href="{{urls.2}}" target="_blank">
           <figure class="tech-photo js--wp-32">
             <img src="{{images.2}}" alt="{{titles.2}}">
             <figcaption>
@@ -222,7 +222,7 @@
         </a>
       </li>
       <li>
-        <a href="{{urls.2}}">
+        <a href="{{urls.2}}" target="_blank">
           <figure class="tech-photo js--wp-33">
             <img src="{{images.2}}" alt="{{titles.2}}">
             <figcaption>
@@ -234,7 +234,7 @@
     </ul>
     <ul class="tech-showcase clearfix">
       <li>
-        <a href="{{urls.2}}">
+        <a href="{{urls.2}}" target="_blank">
           <figure class="tech-photo js--wp-34">
             <img src="{{images.2}}" alt="{{titles.2}}">
             <figcaption>
@@ -244,7 +244,7 @@
         </a>
       </li>
       <li>
-        <a href="{{urls.2}}">
+        <a href="{{urls.2}}" target="_blank">
           <figure class="tech-photo js--wp-35">
             <img src="{{images.2}}" alt="{{titles.2}}">
             <figcaption>
@@ -254,7 +254,7 @@
         </a>
       </li>
       <li>
-        <a href="{{urls.2}}">
+        <a href="{{urls.2}}" target="_blank">
           <figure class="tech-photo js--wp-36">
             <img src="{{images.2}}" alt="{{titles.2}}">
             <figcaption>
@@ -264,7 +264,7 @@
         </a>
       </li>
       <li>
-        <a href="{{urls.2}}">
+        <a href="{{urls.2}}" target="_blank">
           <figure class="tech-photo js--wp-37">
             <img src="{{images.2}}" alt="{{titles.2}}">
             <figcaption>
@@ -338,11 +338,19 @@
 
   <section class="section-form js--subscription">
     <i class="ion-paper-airplane icon-big" style=" display: block; margin: auto; width: 1%;"></i>
+    {% if messages %}
+      {% for message in messages %}
+        <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+          {{ message }}
+        </p>
+      {% endfor %}
+    {% endif %}
     <div class="row">
       <h2>Get updates straight to your inbox</h2>
     </div>
+
     <div class="row">
-      <form method="post" action="/subscribe" class="contact-form" id="subform">
+      <form method="post" action="/subscribe" class="contact-form ajax_form" id="create_user_ajax_form">
         {% csrf_token %}
         <div class="row">
           <div class="col span-1-of-3">
@@ -365,7 +373,7 @@
             <label>&nbsp;</label>
           </div>
           <div class="col span-2-of-3">
-            <button type="submit" form="subform" value="Submit">Submit it!</button>
+            <button type="submit" form="create_user_ajax_form" value="Submit">Submit it!</button>
           </div>
         </div>
       </form>
